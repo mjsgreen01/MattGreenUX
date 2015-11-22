@@ -1,0 +1,13 @@
+{
+  "name": "gulp-webapp",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "underscore": "~1.8.3",
+    "angular": "~1.4.8"
+  },
+  "devDependencies": {
+    "chai": "~3.4.2",
+    "mocha": "~2.3.4"
+  }
+}
