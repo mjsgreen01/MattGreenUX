@@ -10,6 +10,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:800italic' rel='stylesheet' type='text/css'>
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
@@ -17,21 +18,16 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+    <base href="/">
+
   </head>
   <body>
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Sass</li>
-        <li>jQuery</li>
-      </ul>
+    <div class="container">
+      <div ng-view=""></div>
     </div>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
