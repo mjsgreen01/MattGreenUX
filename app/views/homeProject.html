@@ -1,0 +1,18 @@
+<div class="{{project.alias}}Contain previewContain rowContain">
+<div>{{project.project}}</div>
+  <div class="opacityLayer">
+    <div class="titleContain">
+      <div class="projectTitles">
+        <h2>{{project.name}}</h2>
+        <h4>{{project.projectType | uppercase}}</h4>
+        <!-- TODO: use poj aliases for routing -->
+        <p><a href="PSAL/index.html">Read The Case Study</a></p>
+      </div>
+    </div><!-- 
+  --><div class="previewImageContain">
+      <div class="previewContent">
+        <img class="logo {{project.alias}}Logo" ng-src="{{project.logo}}">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,398 @@
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    /*max-width: 730px;*/
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/*Museo Sans*/
+@import url("//hello.myfonts.net/count/2de541");
+@font-face {font-family: 'MuseoSans-300';src: url('webfonts/2DE541_0_0.eot');src: url('webfonts/2DE541_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2DE541_0_0.woff2') format('woff2'),url('webfonts/2DE541_0_0.woff') format('woff'),url('webfonts/2DE541_0_0.ttf') format('truetype');}
+@font-face {font-family: 'MuseoSans-500';src: url('webfonts/2DE541_1_0.eot');src: url('webfonts/2DE541_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2DE541_1_0.woff2') format('woff2'),url('webfonts/2DE541_1_0.woff') format('woff'),url('webfonts/2DE541_1_0.ttf') format('truetype');}
+@font-face {font-family: 'MuseoSans-900';src: url('webfonts/2DE541_2_0.eot');src: url('webfonts/2DE541_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2DE541_2_0.woff2') format('woff2'),url('webfonts/2DE541_2_0.woff') format('woff'),url('webfonts/2DE541_2_0.ttf') format('truetype');}
+
+
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  /*min-width: 1307px;*/
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html{
+  font-size: 16px;
+  /*Base-width for percentages in 1440px*/
+}
+a{
+  text-decoration: none;
+}
+a {color:inherit;}      /* unvisited link */
+a:visited {color:inherit;}  /* visited link */
+a:hover {color:inherit;}  /* mouse over link */
+a:active {color:inherit;}  /* selected link */
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('Avenir.ttc');
+}
+@font-face {
+  font-family: 'Futura';
+  src: url('Futura.ttc');
+}
+
+
+
+html, body{
+  height:100%;
+}
+
+
+.mainContain{
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+.headContain{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  height: auto;
+  font-family: 'Avenir';
+  font-weight: 700;
+}
+.headContain .titleContain{
+  padding-top: 25px;
+padding-bottom: 20px;
+}
+.headContain .titleContain h1{
+  font-size: 16px;
+letter-spacing: 3px;
+}
+.previewContain .previewImageContain{
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.previewContain {
+  height: 285px;
+}
+.previewContent{
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  top: 40%;
+}
+.rowContain{
+  /*border: 1px solid;*/
+}
+.psalContain .previewImageContain{
+  background-image: url('../images/psalBG3.jpg');
+}
+.erbContain .previewImageContain{
+  background-image: url('../images/erbBG2.jpg');
+}
+.macysContain .previewImageContain{
+  background-image: url('../images/macysBG3.jpg');
+}
+.moodsnapContain .previewImageContain{
+  background-image: url('../images/MoodsnapBG3.png');
+}
+.compContain .previewImageContain{
+  background-image: url('../images/comptrollerBG2.jpg');
+}
+.opacityLayer{
+  /*background-color: rgba(255, 255, 255, 0.65);*/
+  width: 100%;
+  height: 100%;
+}
+.logo{
+  width: 100%;
+  display: block;
+margin: 0 auto;
+}
+.psalLogo, .compLogo{
+  width: 150px;
+}
+.erbLogo, .macysLogo, .moodsnapLogo{
+  width: 200px;
+}
+.erbContain .previewContent{
+  top: 28%;
+}
+.moodsnapContain .previewContent{
+  top: 44%;
+}
+.sectionContent{
+  font-family: "MuseoSans-300",sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
+.sectionContent p{
+  margin-bottom: 30px;
+}
+.rowContain img{
+  max-width: 100%;
+}
+h2{
+  font-family: "MuseoSans-900", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  margin-top: 20px;
+}
+h3{
+  font-family: "MuseoSans-900", sans-serif;
+  font-size: 27px;
+  line-height: 32px;
+}
+h4{
+  font-family: "MuseoSans-500", sans-serif;
+  font-size: 14px;
+  color: #bbb;
+  line-height: 24px;
+}
+.titleContain, .sectionContent{
+  padding: 15px;
+}
+.imgContain{
+  text-align: center;
+}
+.psalPage .specsContain .imgContain{
+  padding: 20px;
+}
+.mgLogo{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  background-color: #fff;
+  float: left;
+  position: relative;
+  top: 26px;
+  left: 20px;
+  font-family: "Futura";
+}
+.homePage .mgLogo{
+  float: none;
+}
+.homePage .projectTitles p{
+  margin-top: 40px;
+  font-family: "MuseoSans-300", sans-serif;
+  font-size: 14px;
+  color: #bbb;
+  text-decoration: underline;
+}
+.footContain{
+  padding-bottom: 50px;
+}
+.footContain h3{
+  font-size: 16px;
+}
+.previewContain .titleContain{
+  display: none;
+}
+
+
+@media screen and (min-width: 370px) {
+  .previewContain {
+    height: 305px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .previewContain .titleContain{
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    height: 100%;
+    vertical-align: top;
+  }
+  .titleContain .projectTitles{
+    position: relative;
+    top: 33%;
+    left: 25%;
+    width: 54%;
+  }
+  .previewContain .previewImageContain{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+  }
+  .psalPage .previewImageContain{
+    width: 100%;
+  }
+  .mainContain{
+    max-width: 800px;
+  }
+  .homePage .mainContain{
+    max-width: 100%;
+  }
+  .previewContain{
+    height: 475px;
+  }
+  .psalLogo, .compLogo{
+    width: 50%;
+  }
+  .erbLogo, .macysLogo, .moodsnapLogo{
+    width: 52%;
+  }
+  h4 {
+    font-size: 19px;
+  }
+  .titleContain{
+    left: 17%;
+  }h2 {
+    font-size: 37px;
+    line-height: 43px;
+  }
+  
+}
+
+@media screen and (min-width: 1100px) {
+  h2{
+    font-size: 46px;
+    line-height: 53px;
+  }
+  h4{
+    font-size: 21px;
+    line-height: 35px;
+  }
+}
+@media screen and (min-width: 810px) {
+  
+}
