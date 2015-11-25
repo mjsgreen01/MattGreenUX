@@ -46,6 +46,7 @@ gulp.task('html', ['styles'], () => {
 
   return gulp.src('app/*.html')
     .pipe(assets)
+    .pipe($.if('*.js', $.ngAnnotate()))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
     .pipe(assets.restore())
@@ -68,6 +69,16 @@ gulp.task('images', () => {
       this.end();
     })))
     .pipe(gulp.dest('dist/public/images'));
+});
+
+gulp.task('views', () => {
+  return gulp.src('app/views/*')
+    .pipe(gulp.dest('dist/public/views'));
+});
+
+gulp.task('data', () => {
+  return gulp.src('app/data/*')
+    .pipe(gulp.dest('dist/public/data'));
 });
 
 gulp.task('fonts', () => {
@@ -156,7 +167,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['lint', 'html', 'images', 'views', 'data', 'fonts', 'extras'], () => {
   return gulp.src('dist/public/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
