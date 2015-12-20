@@ -28,6 +28,11 @@ angular
         templateUrl: 'views/homeProjects.html',
         controller: 'ProjectsCtrl as projects'
       })
+      .state('psal', {
+        url: '/psal',
+        templateUrl: 'views/projects/psal.html',
+        controller: 'psalCtrl as vm'
+      })
       .state('about', {
         url: '/about',
         templateUrl: 'views/about.html',
