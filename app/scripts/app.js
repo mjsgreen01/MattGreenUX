@@ -10,28 +10,28 @@
  */
 angular
   .module('mattGreenUX', [
+    'ui.router',
     'ngAnimate',
     'ngCookies',
     'ngResource',
-    'ngRoute',
     'ngSanitize',
     'ngTouch'
     // 'mattGreenUX.project'
   ])
-  .config(function ($routeProvider, $locationProvider) {
-    $routeProvider
-      .when('/', {
+  .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+
+    $urlRouterProvider.otherwise('/');
+
+    $stateProvider
+      .state('projects', {
+        url: '/',
         templateUrl: 'views/homeProjects.html',
-        controller: 'ProjectsCtrl',
-        controllerAs: 'projects'
+        controller: 'ProjectsCtrl as projects'
       })
-      .when('/about', {
+      .state('about', {
+        url: '/about',
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
-      .otherwise({
-        redirectTo: '/'
+        controller: 'AboutCtrl as about'
       });
 
       $locationProvider.html5Mode(true);
