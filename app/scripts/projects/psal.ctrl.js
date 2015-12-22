@@ -6,8 +6,8 @@ angular.module('mattGreenUX')
 
   ProjectsFactory.getData().then(function(){
     vm.projectsData = ProjectsFactory.projectsData;
+    vm.psalData = _.findWhere(vm.projectsData, {alias: 'psal'});
   });
 
-  vm.psalData = _.findWhere(vm.projectsData, {alias: 'psal'});
 
 });
