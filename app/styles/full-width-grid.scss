@@ -1,0 +1,35 @@
+/**
+* Grid Config
+*/
+$total_width: 100%;
+$container_margin: 0%;
+$gutter_width: 0%;
+
+.fullWidthGrid {
+  @include container();
+  @include legacy-pie-clearfix();
+  @include generate_helper_classes();
+
+  .column {
+    height: 100%;
+  }
+
+  .titleColumn {
+    @include column(0, 0)
+  }
+
+  .previewImageColumn {
+    @include column(12, 0)
+  }
+
+  @media screen and (min-width: 800px) {
+
+    .titleColumn {
+      @include column(6, 0)
+    }
+
+    .previewImageColumn {
+      @include column(6, 6)
+    }
+  }
+}

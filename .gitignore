@@ -1,6 +1,6 @@
 node_modules
 dist/public
-.tmp
+app/styles/build
 .sass-cache
 bower_components
 test/bower_components
