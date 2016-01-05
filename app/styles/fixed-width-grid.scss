@@ -1,0 +1,8 @@
+$total_width: 960px;
+$container_margin: 0px;
+$gutter_width: 20px;
+.fixedWidthGrid {
+  @include container();
+  @include legacy-pie-clearfix();
+  @include generate_helper_classes();
+}

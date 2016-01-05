@@ -32,17 +32,7 @@ $image_path: '../../images/';
 
 @import 'full-width-grid';
 
-
-
-
-$total_width: 960px;
-$container_margin: 0px;
-$gutter_width: 20px;
-.fixedWidthGrid {
-  @include container();
-  @include legacy-pie-clearfix();
-  @include generate_helper_classes();
-}
+@import 'fixed-width-grid';
 
 
 
@@ -220,6 +210,7 @@ h4{
     display: inline-block;
     box-sizing: border-box;
     height: 100%;
+    width: 100%;
     vertical-align: top;
   }
   .titleContain .projectTitles{
