@@ -6,7 +6,9 @@
 
 
 $image_path: '../../images/';
-
+$breakpoint1: 370px;
+$breakpoint2: 800px;
+$breakpoint3: 1100px;
 
 /**
 * Museo Sans
@@ -199,13 +201,19 @@ h4{
 
 
 
-
-@media screen and (min-width: 370px) {
+/**
+* Smallest screen to largest
+*/
+@media screen and (min-width: $breakpoint1) {
   .previewContain {
     height: 305px;
   }
 }
-@media screen and (min-width: 800px) {
+
+
+
+
+@media screen and (min-width: $breakpoint2) {
   .previewContain .titleContain{
     display: inline-block;
     box-sizing: border-box;
@@ -252,7 +260,10 @@ h4{
   
 }
 
-@media screen and (min-width: 1100px) {
+
+
+
+@media screen and (min-width: $breakpoint3) {
   h2{
     font-size: 46px;
     line-height: 53px;
@@ -261,7 +272,4 @@ h4{
     font-size: 21px;
     line-height: 35px;
   }
-}
-@media screen and (min-width: 810px) {
-  
 }
