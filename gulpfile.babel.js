@@ -173,4 +173,6 @@ gulp.task('build', ['lint', 'html', 'images', 'views', 'data', 'fonts', 'extras'
 
 gulp.task('default', ['clean'], () => {
   gulp.start('build');
+
+  gulp.watch('app/styles/*.scss',['styles']);
 });
