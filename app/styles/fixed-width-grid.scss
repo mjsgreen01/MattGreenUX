@@ -5,4 +5,12 @@ $gutter_width: 20px;
   @include container();
   @include legacy-pie-clearfix();
   @include generate_helper_classes();
+
+  .column {
+    height: 100%;
+  }
+
+  .projectTextColumn {
+    @include column(12, 0);
+  }
 }
