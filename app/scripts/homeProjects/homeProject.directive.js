@@ -6,6 +6,19 @@ angular.module('mattGreenUX')
   var controller = function(){
     // var vm = this;
     
+    var winHeight = $(window).height();
+
+    function homeResize () {
+      if ($(window).width()>800) {
+        $('.previewContain').css('height',winHeight);
+      }
+    }
+
+    homeResize();
+    $( window ).resize(function() {
+      winHeight = $(window).height();
+      homeResize();
+    });
   };
 
   return {
