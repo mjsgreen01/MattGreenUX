@@ -1,5 +1,5 @@
 <div class="fullWidthGrid">
-  <div ng-repeat="project in projects.projectsData">
+  <div ng-repeat="project in projects.projectsData | limitTo:2">
     <home-project project="project"></home-project>
   </div>
 </div>

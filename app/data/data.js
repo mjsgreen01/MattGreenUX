@@ -6,7 +6,7 @@
       "projectType": "mobile app",
       "bgImage": "",
       "logoWhite": "images/nyc_logo.png",
-      "logoColor": "images/psal/psalLogoColor.jpg",
+      "logoColor": "images/psal/psalLogoColor.png",
       "descriptionUrl": ""
     },
     {
@@ -15,7 +15,7 @@
       "projectType": "tablet & web apps",
       "bgImage": "",
       "logoWhite": "images/erbLogo1.png",
-      "logoColor": "images/",
+      "logoColor": "images/erb/erbLogoColor.png",
       "descriptionUrl": ""
     },
     {
