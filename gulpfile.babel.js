@@ -171,6 +171,10 @@ gulp.task('build', ['lint', 'html', 'images', 'views', 'data', 'fonts', 'extras'
   return gulp.src('dist/public/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
+gulp.task('heroku', ['clean'], () => {
+  gulp.start('build');
+});
+
 gulp.task('default', ['clean'], () => {
   gulp.start('build');
 
