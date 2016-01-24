@@ -167,7 +167,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'views', 'data', 'fonts', 'extras'], () => {
+gulp.task('build', ['html', 'images', 'views', 'data', 'fonts', 'extras'], () => {
   return gulp.src('dist/public/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

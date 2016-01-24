@@ -2,8 +2,8 @@
   "private": true,
   "main": "server.js",
   "scripts": {
-    "start": "node dist/server.js",
-    "postinstall": "bower install; gulp heroku"
+    "start": "cd dist && npm install && node server.js",
+    "postinstall": "bower install && gulp heroku"
   },
   "engines": {
     "node": ">=0.12.0"
