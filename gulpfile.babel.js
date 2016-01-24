@@ -72,7 +72,7 @@ gulp.task('images', () => {
 });
 
 gulp.task('views', () => {
-  return gulp.src('app/views/*')
+  return gulp.src('app/views/**/*')
     .pipe(gulp.dest('dist/public/views'));
 });
 
