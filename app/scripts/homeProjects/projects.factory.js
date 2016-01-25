@@ -6,10 +6,14 @@ angular.module('mattGreenUX')
   ProjectsFactory.projectsData = {};
 
   ProjectsFactory.getData = function(){
-    console.log('inside proj factory');
     return $http.get('/data/data.js').then(function(res){
       ProjectsFactory.projectsData = res.data.projects;
-      console.log(res);
+    });
+  };
+
+  ProjectsFactory.getPsalData = function(){
+    return $http.get('/data/psal.js').then(function(res){
+      ProjectsFactory.psalData = res.data;
     });
   };
 
