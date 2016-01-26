@@ -9,7 +9,11 @@
   <div class="fixedWidthGrid">
     <div class="row">
       <div class="column projectTextColumn">
-        {{vm.projectText}}
+        <div class="projectTitles">
+          <h2>{{vm.psalData.name}}</h2>
+          <h4>{{vm.psalData.projectType | uppercase}}</h4>
+        </div>
+        <div ng-include="'views/projects/psalBody.html'"></div>
         
       </div>
     </div>
