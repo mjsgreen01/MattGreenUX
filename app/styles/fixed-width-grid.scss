@@ -1,5 +1,5 @@
 $total_width: 960px;
-$container_margin: 0px;
+$container_margin: auto;
 $gutter_width: 20px;
 .fixedWidthGrid {
   @include container();
