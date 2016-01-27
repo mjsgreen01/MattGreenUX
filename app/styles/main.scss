@@ -29,7 +29,12 @@ $breakpoint3: 1100px;
 }
 
 
-
+body {
+  font-family: "MuseoSans-300",sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
 
 
 @import 'full-width-grid';
