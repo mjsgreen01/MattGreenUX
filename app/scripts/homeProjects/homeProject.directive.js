@@ -7,16 +7,21 @@ angular.module('mattGreenUX')
     // var vm = this;
     
     var winHeight = $(window).height();
+    var flexed;
 
     function homeResize () {
-      if ($(window).width()>800) {
+      if ($(window).width()>1100) {
+        flexed = true;
         $('.previewRow').css('height',winHeight);
-      }else{
+      } else if (flexed) {
+        flexed = false;
         $('.previewRow').css('height','');
       }
     }
 
     homeResize();
+
+    // Question: Is this better than doing a $watch on window-height?
     $( window ).resize(function() {
       winHeight = $(window).height();
       homeResize();
