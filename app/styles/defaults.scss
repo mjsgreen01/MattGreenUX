@@ -132,6 +132,25 @@ h4 {
 
 .footContain {
   padding-bottom: 50px;
+  padding-top: 60px;
+  background-color: black;
+  color: white;
+
+  p {
+    text-align: center;
+  }
+
+  .socialLinksContain {
+    margin: 0 auto;
+
+    .linkedIn {
+      float: left;
+    }
+
+    .twitter {
+      float: right;
+    }
+  }
 }
 
 .footContain h3 {
