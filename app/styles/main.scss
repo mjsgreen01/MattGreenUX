@@ -1,45 +1,25 @@
 // bower:scss
 // endbower
 
-@import 'reset';
-@import 'vendor/manifest';
-
 
 $image_path: '../../images/';
 $breakpoint1: 370px;
 $breakpoint2: 800px;
 $breakpoint3: 1100px;
 
-/**
-* Museo Sans
-*/
-@import url("//hello.myfonts.net/count/2de541");
-@font-face {font-family: 'MuseoSans-300';src: url('webfonts/2DE541_0_0.eot');src: url('webfonts/2DE541_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2DE541_0_0.woff2') format('woff2'),url('webfonts/2DE541_0_0.woff') format('woff'),url('webfonts/2DE541_0_0.ttf') format('truetype');}
-@font-face {font-family: 'MuseoSans-500';src: url('webfonts/2DE541_1_0.eot');src: url('webfonts/2DE541_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2DE541_1_0.woff2') format('woff2'),url('webfonts/2DE541_1_0.woff') format('woff'),url('webfonts/2DE541_1_0.ttf') format('truetype');}
-@font-face {font-family: 'MuseoSans-900';src: url('webfonts/2DE541_2_0.eot');src: url('webfonts/2DE541_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2DE541_2_0.woff2') format('woff2'),url('webfonts/2DE541_2_0.woff') format('woff'),url('webfonts/2DE541_2_0.ttf') format('truetype');}
 
 
-@font-face {
-  font-family: 'Avenir';
-  src: url('Avenir.ttc');
-}
-@font-face {
-  font-family: 'Futura';
-  src: url('Futura.ttc');
-}
+@import 'reset';
+@import 'vendor/manifest';
+@import 'defaults';
 
-
-body {
-  font-family: "MuseoSans-300",sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 27px;
-}
 
 
 @import 'full-width-grid';
 
 @import 'fixed-width-grid';
+
+@import 'home-page';
 
 
 

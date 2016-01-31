@@ -1,0 +1,189 @@
+/**
+* Museo Sans
+*/
+
+@import url("//hello.myfonts.net/count/2de541");
+@font-face {
+  font-family: 'MuseoSans-300';
+  src: url('webfonts/2DE541_0_0.eot');
+  src: url('webfonts/2DE541_0_0.eot?#iefix') format('embedded-opentype'), url('webfonts/2DE541_0_0.woff2') format('woff2'), url('webfonts/2DE541_0_0.woff') format('woff'), url('webfonts/2DE541_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MuseoSans-500';
+  src: url('webfonts/2DE541_1_0.eot');
+  src: url('webfonts/2DE541_1_0.eot?#iefix') format('embedded-opentype'), url('webfonts/2DE541_1_0.woff2') format('woff2'), url('webfonts/2DE541_1_0.woff') format('woff'), url('webfonts/2DE541_1_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MuseoSans-900';
+  src: url('webfonts/2DE541_2_0.eot');
+  src: url('webfonts/2DE541_2_0.eot?#iefix') format('embedded-opentype'), url('webfonts/2DE541_2_0.woff2') format('woff2'), url('webfonts/2DE541_2_0.woff') format('woff'), url('webfonts/2DE541_2_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('Avenir.ttc');
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('Futura.ttc');
+}
+
+
+
+
+
+
+/**
+* Default styles - gets overwritten at larger screen sizes
+*/
+
+
+body {
+  font-family: "MuseoSans-300", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+
+
+
+.mainContain {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.headContain {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  height: auto;
+  font-family: 'Avenir';
+  font-weight: 700;
+}
+
+.headContain .titleContain {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.headContain .titleContain h1 {
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+
+
+.logo {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.rowContain img {
+  max-width: 100%;
+}
+
+h2 {
+  font-family: "MuseoSans-900", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  margin-top: 20px;
+}
+
+h3 {
+  font-family: "MuseoSans-900", sans-serif;
+  font-size: 27px;
+  line-height: 32px;
+}
+
+h4 {
+  font-family: "MuseoSans-500", sans-serif;
+  font-size: 14px;
+  color: #bbb;
+  line-height: 24px;
+}
+
+
+
+.mgLogo {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  background-color: #fff;
+  float: left;
+  position: relative;
+  top: 26px;
+  left: 20px;
+  font-family: "Futura";
+}
+
+
+
+
+.footContain {
+  padding-bottom: 50px;
+}
+
+.footContain h3 {
+  font-size: 16px;
+}
+
+
+img.mobile {
+  max-width: 100%;
+}
+
+
+
+
+
+/**
+* Smallest screen to largest
+*/
+
+@media screen and (min-width: $breakpoint1) {
+  
+}
+
+
+
+
+@media screen and (min-width: $breakpoint2) {
+
+  .mainContain {
+    max-width: 100%;
+  }
+  
+  h4 {
+    font-size: 19px;
+  }
+  h2 {
+    font-size: 37px;
+    line-height: 43px;
+  }
+}
+
+
+
+
+@media screen and (min-width: $breakpoint3) {
+  h2 {
+    font-size: 46px;
+    line-height: 53px;
+  }
+  h4 {
+    font-size: 21px;
+    line-height: 35px;
+  }
+}
+
