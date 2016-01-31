@@ -2,7 +2,7 @@
 * Preview containers and content
 */
 
-.previewContain .previewImageContain {
+.previewImageContain {
   height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -11,7 +11,7 @@
   background-position: center;
 }
 
-.previewContain {
+.previewRow {
   height: 285px;
 }
 
@@ -26,23 +26,23 @@
   /*border: 1px solid;*/
 }
 
-.psalContain .previewImageContain {
+.psalRow .previewImageContain {
   background-image: url('#{$image_path}psal/psalMobileHome.jpg');
 }
 
-.erbContain .previewImageContain {
+.erbRow .previewImageContain {
   background-image: url('#{$image_path}erb/erbMobileHome.jpg');
 }
 
-.macysContain .previewImageContain {
+.macysRow .previewImageContain {
   background-image: url('#{$image_path}macysBG3.jpg');
 }
 
-.moodsnapContain .previewImageContain {
+.moodsnapRow .previewImageContain {
   background-image: url('#{$image_path}MoodsnapBG3.png');
 }
 
-.compContain .previewImageContain {
+.compRow .previewImageContain {
   background-image: url('#{$image_path}comptrollerBG2.jpg');
 }
 
@@ -52,11 +52,11 @@
   height: 100%;
 }
 
-.erbContain .previewContent {
+.erbRow .previewContent {
   top: 28%;
 }
 
-.moodsnapContain .previewContent {
+.moodsnapRow .previewContent {
   top: 44%;
 }
 
@@ -92,7 +92,7 @@
   text-decoration: underline;
 }
 
-.previewContain .titleContain {
+.previewRow .titleContain {
   display: none;
 }
 
@@ -127,28 +127,28 @@
 */
 
 @media screen and (min-width: $breakpoint1) {
-  .previewContain {
+  .previewRow {
     height: 305px;
   }
 }
 
 @media screen and (min-width: $breakpoint2) {
-  .psalContain .previewImageContain {
+  .psalRow .previewImageContain {
     background-image: url('#{$image_path}psal/psalDesktopHome.jpg');
   }
-  .erbContain .previewImageContain {
+  .erbRow .previewImageContain {
     background-image: url('#{$image_path}erb/erbDesktopHome.jpg');
   }
-  .macysContain .previewImageContain {
+  .macysRow .previewImageContain {
     background-image: url('#{$image_path}macysBG3.jpg');
   }
-  .moodsnapContain .previewImageContain {
+  .moodsnapRow .previewImageContain {
     background-image: url('#{$image_path}MoodsnapBG3.png');
   }
-  .compContain .previewImageContain {
+  .compRow .previewImageContain {
     background-image: url('#{$image_path}comptrollerBG2.jpg');
   }
-  .previewContain .titleContain {
+  .previewRow .titleContain {
     display: inline-block;
     box-sizing: border-box;
     height: 100%;
@@ -161,14 +161,14 @@
     left: 15%;
     width: 74%;
   }
-  .previewContain .previewImageContain {
+  .previewRow .previewImageContain {
     width: 100%;
     height: 100%;
   }
   .psalPage .previewImageContain {
     width: 100%;
   }
-  .previewContain {
+  .previewRow {
     height: 475px;
   }
   .psalLogo,

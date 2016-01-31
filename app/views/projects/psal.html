@@ -1,20 +1,17 @@
 <div>
   <div class="fullWidthGrid">
-    <div class="row">
-      <div class="column projectHeaderColumn">
-        
+    <div class="row previewRow psalRow">
+      <div class="column projectHeaderColumn previewImageColumn">
+        <div class="previewImageContain"></div>
       </div>
     </div>
   </div>
   <div class="fixedWidthGrid">
     <div class="row">
       <div class="column projectTextColumn">
-        <div class="projectTitles">
-          <h2>{{vm.psalData.name}}</h2>
-          <h4>{{vm.psalData.projectType | uppercase}}</h4>
-        </div>
+
         <div ng-include="'views/projects/psalBody.html'"></div>
-        
+
       </div>
     </div>
   </div>
