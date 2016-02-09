@@ -4,6 +4,7 @@ const compression = require('compression');
 const port = process.env.PORT || 3000;
 const domain =  process.env.DOMAIN;
 
+// what is the purpose of this?
 function ensureDomain(req, res, next) {
   if (!domain || req.hostname === domain) {
     // OK, continue
@@ -24,7 +25,7 @@ app.use(compression());
 // default to .html (you can omit the extension in the URL)
 app.use(serveStatic(`${__dirname}/public`, {'extensions': ['html']}));
 
-app.use(['/projects', '/psal'], function(req, res, next) {
+app.use(['/projects', '/psal', 'erb'], function(req, res, next) {
     // Just send the index.html for other files to support HTML5Mode
     res.sendFile('index.html', { root: __dirname+'/public' });
 });

@@ -11,6 +11,8 @@ angular.module('mattGreenUX')
     });
   };
 
+
+  // consider removing this since we're using ng-include
   ProjectsFactory.getPsalData = function(){
     return $http.get('/data/psal.js').then(function(res){
       ProjectsFactory.psalData = res.data;

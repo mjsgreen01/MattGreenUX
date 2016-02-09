@@ -33,6 +33,11 @@ angular
         templateUrl: 'views/projects/psal.html',
         controller: 'psalCtrl as vm'
       })
+      .state('erb', {
+        url: '/erb',
+        templateUrl: 'views/projects/erb.html',
+        controller: 'erbCtrl as vm'
+      })
       .state('about', {
         url: '/about',
         templateUrl: 'views/about.html',
