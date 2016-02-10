@@ -1,6 +1,6 @@
 {
-  "projects": [
-    {
+  "projects": {
+    "psal": {
       "name": "Public Schools Athletic League",
       "alias": "psal",
       "projectType": "mobile app",
@@ -9,7 +9,7 @@
       "logoColor": "images/psal/psalLogoColor.png",
       "descriptionUrl": ""
     },
-    {
+    "erb": {
       "name": "Admissions Assessment",
       "alias": "erb",
       "projectType": "tablet & web apps",
@@ -18,7 +18,7 @@
       "logoColor": "images/erb/erbLogoColor.png",
       "descriptionUrl": ""
     },
-    {
+    "macys": {
       "name": "Thanksgiving Day Parade",
       "alias": "macys",
       "projectType": "mobile app",
@@ -27,7 +27,7 @@
       "logoColor": "images/",
       "descriptionUrl": ""
     },
-    {
+    "moodsnap": {
       "name": "Moodsnap",
       "alias": "moodsnap",
       "projectType": "mobile app",
@@ -36,7 +36,7 @@
       "logoColor": "images/",
       "descriptionUrl": ""
     },
-    {
+    "comp": {
       "name": "Office of the Comptroller",
       "alias": "comp",
       "projectType": "website",
@@ -45,5 +45,5 @@
       "logoColor": "images/",
       "descriptionUrl": ""
     }
-  ]
+  }
 }

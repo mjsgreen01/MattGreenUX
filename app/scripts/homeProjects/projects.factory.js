@@ -2,8 +2,11 @@
 angular.module('mattGreenUX')
 .factory('ProjectsFactory', function($http){
 
-  var ProjectsFactory = {};
-  ProjectsFactory.projectsData = {};
+  var ProjectsFactory = {
+    projectsData: {},
+    projectsOrder: ['psal', 'erb', 'macys', 'moodsnap', 'comp']
+  };
+
 
   ProjectsFactory.getData = function(){
     return $http.get('/data/data.js').then(function(res){

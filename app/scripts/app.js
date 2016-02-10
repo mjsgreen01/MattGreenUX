@@ -26,7 +26,7 @@ angular
       .state('projects', {
         url: '/',
         templateUrl: 'views/homeProjects.html',
-        controller: 'ProjectsCtrl as projects'
+        controller: 'ProjectsCtrl as vm'
       })
       .state('psal', {
         url: '/psal',

@@ -9,10 +9,10 @@ angular.module('mattGreenUX')
     vm.psalData = _.findWhere(vm.projectsData, {alias: 'psal'});
   });
 
-  ProjectsFactory.getPsalData().then(function(){
-    vm.projectData = ProjectsFactory.psalData;
-    vm.projectText = ProjectsFactory.psalData.projectText;
-  });
+  // ProjectsFactory.getPsalData().then(function(){
+  //   vm.projectData = ProjectsFactory.psalData;
+  //   vm.projectText = ProjectsFactory.psalData.projectText;
+  // });
 
 
 });
