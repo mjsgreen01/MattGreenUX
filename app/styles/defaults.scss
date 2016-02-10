@@ -55,7 +55,7 @@ body {
     margin: 0 auto;
     max-width: 380px;
   }
-  
+
   p, .imageSet {
     margin-bottom: 30px;
   }
@@ -142,17 +142,24 @@ h4 {
 
 
 .footContain {
-  padding-bottom: 50px;
-  padding-top: 60px;
+  padding-bottom: 40px;
+  padding-top: 70px;
   background-color: black;
   color: white;
 
-  p {
+  .contactEmail {
+    margin-bottom: 50px;
     text-align: center;
   }
 
   .socialLinksContain {
     margin: 0 auto;
+    width: 98px;
+    @include clearfix();
+
+    .fa {
+      font-size: 30px;
+    }
 
     .linkedIn {
       float: left;
