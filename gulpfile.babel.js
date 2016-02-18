@@ -84,9 +84,8 @@ gulp.task('data', () => {
 gulp.task('fonts', () => {
   return gulp.src(require('main-bower-files')({
     filter: '**/*.{eot,svg,ttf,woff,woff2}'
-  }).concat('app/fonts/**/*'))
-    .pipe(gulp.dest('.tmp/fonts'))
-    .pipe(gulp.dest('dist/public/fonts'));
+  }).concat('app/styles/webfonts/**/*'))
+    .pipe(gulp.dest('dist/public/styles/webfonts'));
 });
 
 gulp.task('extras', () => {
