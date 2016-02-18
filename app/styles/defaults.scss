@@ -6,19 +6,19 @@
 @font-face {
   font-family: 'MuseoSans-300';
   src: url('webfonts/2DE541_0_0.eot');
-  src: url('webfonts/2DE541_0_0.eot?#iefix') format('embedded-opentype'), url('webfonts/2DE541_0_0.woff2') format('woff2'), url('webfonts/2DE541_0_0.woff') format('woff'), url('webfonts/2DE541_0_0.ttf') format('truetype');
+  src: url('webfonts/2DE541_0_0.eot?#iefix') format('embedded-opentype');
 }
 
 @font-face {
   font-family: 'MuseoSans-500';
   src: url('webfonts/2DE541_1_0.eot');
-  src: url('webfonts/2DE541_1_0.eot?#iefix') format('embedded-opentype'), url('webfonts/2DE541_1_0.woff2') format('woff2'), url('webfonts/2DE541_1_0.woff') format('woff'), url('webfonts/2DE541_1_0.ttf') format('truetype');
+  src: url('webfonts/2DE541_1_0.eot?#iefix') format('embedded-opentype');
 }
 
 @font-face {
   font-family: 'MuseoSans-900';
   src: url('webfonts/2DE541_2_0.eot');
-  src: url('webfonts/2DE541_2_0.eot?#iefix') format('embedded-opentype'), url('webfonts/2DE541_2_0.woff2') format('woff2'), url('webfonts/2DE541_2_0.woff') format('woff'), url('webfonts/2DE541_2_0.ttf') format('truetype');
+  src: url('webfonts/2DE541_2_0.eot?#iefix') format('embedded-opentype');
 }
 
 @font-face {
@@ -159,6 +159,7 @@ h4 {
 
     .fa {
       font-size: 30px;
+      opacity: .2;
     }
 
     .linkedIn {
