@@ -23,22 +23,34 @@ angular
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-      .state('projects', {
+      .state('app',{
+        url: '',
+        abstract: true,
+        views: {
+          '': {
+              templateUrl: 'views/main.html'
+          },
+          'footer@app':{
+            templateUrl: 'views/footer.html'
+          }
+        }
+      })
+      .state('app.projects', {
         url: '/',
         templateUrl: 'views/homeProjects.html',
         controller: 'ProjectsCtrl as vm'
       })
-      .state('psal', {
+      .state('app.psal', {
         url: '/psal',
         templateUrl: 'views/projects/psal.html',
         controller: 'psalCtrl as vm'
       })
-      .state('erb', {
+      .state('app.erb', {
         url: '/erb',
         templateUrl: 'views/projects/erb.html',
         controller: 'erbCtrl as vm'
       })
-      .state('about', {
+      .state('app.about', {
         url: '/about',
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl as about'
