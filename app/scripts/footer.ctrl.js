@@ -12,7 +12,12 @@ angular.module('mattGreenUX')
     }, 0);
   });
 
-  
+  $scope.$on('$viewContentLoaded', 
+  function(){ 
+    $timeout(function() {debugger;
+      vm.loaded = true;
+    }, 0);
+  });
 
 
 });

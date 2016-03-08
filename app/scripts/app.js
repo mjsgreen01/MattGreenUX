@@ -28,7 +28,8 @@ angular
         abstract: true,
         views: {
           '': {
-            templateUrl: 'views/main.html'
+            templateUrl: 'views/main.html',
+            controller: 'AppCtrl as vm'
           },
           'footer@app':{
             templateUrl: 'views/footer.html',
