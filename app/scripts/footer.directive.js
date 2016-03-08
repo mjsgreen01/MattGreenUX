@@ -4,7 +4,9 @@ angular.module('mattGreenUX')
 
 .directive('footerDirective', function($timeout){
   var controller = function(){
-    
+    var vm = this;
+
+    vm.test = true;
   };
 
   return {
@@ -13,13 +15,13 @@ angular.module('mattGreenUX')
     scope: {
     },
     controller: controller,
-    controllerAs: 'homeProject',
+    controllerAs: 'vm',
+    bindToController: true,
     link: function (scope, el, attrs, ngModel) {
       $timeout(function() {
-        
+        scope.vm.show = true;
       }, 0);
     }
-    // bindToController: true
   };
 
 });
