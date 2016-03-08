@@ -28,10 +28,11 @@ angular
         abstract: true,
         views: {
           '': {
-              templateUrl: 'views/main.html'
+            templateUrl: 'views/main.html'
           },
           'footer@app':{
-            templateUrl: 'views/footer.html'
+            templateUrl: 'views/footer.html',
+            controller: 'FooterCtrl as vm'
           }
         }
       })
