@@ -1,190 +1,190 @@
-/**
-* Preview containers and content
-*/
+.homePage {
 
-.previewImageContain {
-  height: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
+  /**
+  * Preview containers and content
+  */
 
-  .projectLink {
-    display: block;
-    width: 100%;
+  .previewImageContain {
     height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+
+    .projectLink {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
   }
-}
 
-.previewRow {
-  height: 285px;
-}
-
-.previewContent {
-  width: 85%;
-  margin: 0 auto;
-  position: relative;
-  top: 40%;
-}
-
-.rowContain {
-  /*border: 1px solid;*/
-}
-
-.psalRow .previewImageContain {
-  background-image: url('#{$image_path}psal/psalMobileHome.jpg');
-}
-
-.erbRow .previewImageContain {
-  background-image: url('#{$image_path}erb/erbMobileHome.jpg');
-}
-
-.macysRow .previewImageContain {
-  background-image: url('#{$image_path}macysBG3.jpg');
-}
-
-.moodsnapRow .previewImageContain {
-  background-image: url('#{$image_path}MoodsnapBG3.png');
-}
-
-.compRow .previewImageContain {
-  background-image: url('#{$image_path}comptrollerBG2.jpg');
-}
-
-.opacityLayer {
-  /*background-color: rgba(255, 255, 255, 0.65);*/
-  width: 100%;
-  height: 100%;
-}
-
-.erbRow .previewContent {
-  top: 28%;
-}
-
-.moodsnapRow .previewContent {
-  top: 44%;
-}
-
-.sectionContent {
-  font-family: "MuseoSans-300", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 27px;
-}
-
-.sectionContent p {
-  margin-bottom: 30px;
-}
-
-.titleContain,
-.sectionContent {
-  padding: 15px;
-}
-
-.imgContain {
-  text-align: center;
-}
-
-.psalPage .specsContain .imgContain {
-  padding: 20px;
-}
-
-.homePage .projectTitles p {
-  margin-top: 40px;
-  font-family: "MuseoSans-300", sans-serif;
-  font-size: 14px;
-  color: #bbb;
-  text-decoration: underline;
-}
-
-.previewRow .titleContain {
-  display: none;
-}
-
-
-
-
-
-/**
-* Logos
-*/
-
-.psalLogo,
-.compLogo {
-  width: 150px;
-}
-
-.erbLogo,
-.macysLogo,
-.moodsnapLogo {
-  width: 200px;
-}
-
-.homePage .mgLogo {
-  float: none;
-}
-
-
-
-
-/**
-* Smallest screen to largest
-*/
-
-@media screen and (min-width: $breakpoint1) {
   .previewRow {
-    height: 305px;
+    height: 285px;
   }
-}
 
-@media screen and (min-width: $breakpoint2) {
+  .previewContent {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+  }
+
+  .rowContain {
+    /*border: 1px solid;*/
+  }
+
   .psalRow .previewImageContain {
-    background-image: url('#{$image_path}psal/psalDesktopHome.jpg');
+    background-image: url('#{$image_path}psal/psalMobileHome.jpg');
   }
+
   .erbRow .previewImageContain {
-    background-image: url('#{$image_path}erb/erbDesktopHome.jpg');
+    background-image: url('#{$image_path}erb/erbMobileHome.jpg');
   }
+
   .macysRow .previewImageContain {
     background-image: url('#{$image_path}macysBG3.jpg');
   }
+
   .moodsnapRow .previewImageContain {
     background-image: url('#{$image_path}MoodsnapBG3.png');
   }
+
   .compRow .previewImageContain {
     background-image: url('#{$image_path}comptrollerBG2.jpg');
   }
+
+  .opacityLayer {
+    /*background-color: rgba(255, 255, 255, 0.65);*/
+    width: 100%;
+    height: 100%;
+  }
+
+  .erbRow .previewContent {
+    top: 28%;
+  }
+
+  .moodsnapRow .previewContent {
+    top: 44%;
+  }
+
+  .sectionContent {
+    font-family: "MuseoSans-300", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .sectionContent p {
+    margin-bottom: 30px;
+  }
+
+  .titleContain,
+  .sectionContent {
+    padding: 15px;
+  }
+
+  .imgContain {
+    text-align: center;
+  }
+
+  .psalPage .specsContain .imgContain {
+    padding: 20px;
+  }
+
+  .projectTitles p {
+    margin-top: 40px;
+    font-family: "MuseoSans-300", sans-serif;
+    font-size: 14px;
+    color: #bbb;
+    text-decoration: underline;
+  }
+
   .previewRow .titleContain {
-    display: inline-block;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
+    display: none;
   }
-  .titleContain .projectTitles {
-    position: relative;
-    top: 33%;
-    left: 15%;
-    width: 74%;
+
+
+
+
+
+  /**
+  * Logos
+  */
+
+  .logo {
+    width: 75px;
   }
-  .previewRow .previewImageContain {
-    width: 100%;
-    height: 100%;
+
+  // .psalLogo,
+  // .compLogo {
+  //   width: 75px;
+  // }
+
+  // .erbLogo,
+  // .macysLogo,
+  // .moodsnapLogo {
+  //   width: 200px;
+  // }
+
+  .mgLogo {
+    float: none;
   }
-  .psalPage .previewImageContain {
-    width: 100%;
+
+
+
+
+  /**
+  * Smallest screen to largest
+  */
+
+  @media screen and (min-width: $breakpoint1) {
+    .previewRow {
+      height: 305px;
+    }
   }
-  .previewRow {
-    height: 475px;
-  }
-  .psalLogo,
-  .compLogo {
-    width: 50%;
-  }
-  .erbLogo,
-  .macysLogo,
-  .moodsnapLogo {
-    width: 52%;
+
+  @media screen and (min-width: $breakpoint2) {
+    .psalRow .previewImageContain {
+      background-image: url('#{$image_path}psal/psalDesktopHome.jpg');
+    }
+    .erbRow .previewImageContain {
+      background-image: url('#{$image_path}erb/erbDesktopHome.jpg');
+    }
+    .macysRow .previewImageContain {
+      background-image: url('#{$image_path}macysBG3.jpg');
+    }
+    .moodsnapRow .previewImageContain {
+      background-image: url('#{$image_path}MoodsnapBG3.png');
+    }
+    .compRow .previewImageContain {
+      background-image: url('#{$image_path}comptrollerBG2.jpg');
+    }
+
+    .previewRow {
+      height: 475px;
+
+      .titleContain {
+        display: inline-block;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        vertical-align: top;
+
+        .projectTitles {
+          position: relative;
+          top: 33%;
+          left: 15%;
+          width: 74%;
+        }
+      }
+
+      .previewImageContain {
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+
   }
 }
-
