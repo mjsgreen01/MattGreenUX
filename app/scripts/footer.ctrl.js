@@ -7,7 +7,7 @@ angular.module('mattGreenUX')
 
   $scope.$on('$stateChangeSuccess', 
   function(){ 
-    $timeout(function() {
+    $timeout(function() {debugger;
       vm.loaded = true;
     }, 0);
   });
