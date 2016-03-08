@@ -9,6 +9,7 @@ angular.module('mattGreenUX')
     var winHeight = $(window).height();
     var flexed;
 
+    // TODO: Put this shit into a link function
     function homeResize () {
       if ($(window).width()>1100) {
         flexed = true;

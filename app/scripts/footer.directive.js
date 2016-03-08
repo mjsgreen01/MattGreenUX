@@ -15,7 +15,7 @@ angular.module('mattGreenUX')
     controller: controller,
     controllerAs: 'homeProject',
     link: function (scope, el, attrs, ngModel) {
-      $timeout(function() {debugger;
+      $timeout(function() {
         
       }, 0);
     }

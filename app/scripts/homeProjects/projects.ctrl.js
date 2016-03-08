@@ -6,13 +6,13 @@ angular.module('mattGreenUX')
 
   vm.projectsData = [];
 
-  ProjectsFactory.getData().then(function(){
+  // ProjectsFactory.getData().then(function(){
     // this should be done in the service
     angular.forEach(ProjectsFactory.projectsOrder, function (alias) {
       vm.projectsData.push( ProjectsFactory.projectsData[alias] );
     });
 
-  });
+  // });
 
 
 });

@@ -10,7 +10,7 @@ angular.module('mattGreenUX')
 
   ProjectsFactory.getData = function(){
     return $http.get('/data/data.js').then(function(res){
-      ProjectsFactory.projectsData = res.data.projects;
+      return ProjectsFactory.projectsData = res.data.projects;
     });
   };
 

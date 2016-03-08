@@ -26,14 +26,17 @@ angular
       .state('app',{
         url: '',
         abstract: true,
+        resolve: {
+            projectData: function(ProjectsFactory) {
+                return ProjectsFactory.getData();
+            }
+        },
         views: {
           '': {
-            templateUrl: 'views/main.html',
-            controller: 'AppCtrl as vm'
+            templateUrl: 'views/main.html'
           },
           'footer@app':{
-            templateUrl: 'views/footer.html',
-            controller: 'FooterCtrl as vm'
+            templateUrl: 'views/footer.html'
           }
         }
       })
