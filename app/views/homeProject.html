@@ -7,13 +7,13 @@
         </div>
         <h2>{{project.name}}</h2>
         <h4>{{project.projectType | uppercase}}</h4>
-        <p><a ui-sref="{{project.alias}}">Read The Case Study</a></p>
+        <p><a ui-sref="app.{{project.alias}}">Read The Case Study</a></p>
       </div>
     </div>
   </div>
   <div class="column previewImageColumn">
     <div class="previewImageContain">
-      <a class="projectLink" ui-sref="{{project.alias}}"></a>
+      <a class="projectLink" ui-sref="app.{{project.alias}}"></a>
     </div>
   </div>
 </div>
