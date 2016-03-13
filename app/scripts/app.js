@@ -40,8 +40,12 @@ angular
           }
         }
       })
-      .state('app.projects', {
+      .state('temp', {
         url: '/',
+        templateUrl: 'views/temp.html'
+      })
+      .state('app.projects', {
+        url: '/home',
         templateUrl: 'views/homeProjects.html',
         controller: 'ProjectsCtrl as vm'
       })
