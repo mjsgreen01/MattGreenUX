@@ -1,0 +1,10 @@
+.footerNav.fullWidthGrid {
+    .previewRow {
+        height: 115px;
+
+        .macysPreviewImage {
+        background-image: url('#{$image_path}macys/macysMobileFooter.jpg');
+        }
+        
+    }
+}

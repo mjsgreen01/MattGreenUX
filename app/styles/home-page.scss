@@ -34,23 +34,23 @@
     /*border: 1px solid;*/
   }
 
-  .psalRow .previewImageContain {
+  .psalRow .previewImageContain, .psalPreviewImage {
     background-image: url('#{$image_path}psal/psalMobileHome.jpg');
   }
 
-  .erbRow .previewImageContain {
+  .erbRow .previewImageContain, .erbPreviewImage {
     background-image: url('#{$image_path}erb/erbMobileHome.jpg');
   }
 
-  .macysRow .previewImageContain {
+  .macysRow .previewImageContain, .macysPreviewImage {
     background-image: url('#{$image_path}macysBG3.jpg');
   }
 
-  .moodsnapRow .previewImageContain {
+  .moodsnapRow .previewImageContain, .moodsnapPreviewImage {
     background-image: url('#{$image_path}MoodsnapBG3.png');
   }
 
-  .compRow .previewImageContain {
+  .compRow .previewImageContain, .compPreviewImage {
     background-image: url('#{$image_path}comptrollerBG2.jpg');
   }
 
@@ -145,19 +145,19 @@
   }
 
   @media screen and (min-width: $breakpoint2) {
-    .psalRow .previewImageContain {
+    .psalRow .previewImageContain, .psalPreviewImage {
       background-image: url('#{$image_path}psal/psalDesktopHome.jpg');
     }
-    .erbRow .previewImageContain {
+    .erbRow .previewImageContain, .erbPreviewImage {
       background-image: url('#{$image_path}erb/erbDesktopHome.jpg');
     }
-    .macysRow .previewImageContain {
+    .macysRow .previewImageContain, .macysPreviewImage {
       background-image: url('#{$image_path}macysBG3.jpg');
     }
-    .moodsnapRow .previewImageContain {
+    .moodsnapRow .previewImageContain, .moodsnapPreviewImage {
       background-image: url('#{$image_path}MoodsnapBG3.png');
     }
-    .compRow .previewImageContain {
+    .compRow .previewImageContain, .compPreviewImage {
       background-image: url('#{$image_path}comptrollerBG2.jpg');
     }
 
