@@ -48,6 +48,14 @@ body {
   line-height: 27px;
 }
 
+.desktopOnly {
+  display: none;
+}
+
+.mobileOnly {
+  display: block;
+}
+
 
 .projectPage {
 
@@ -91,14 +99,56 @@ body {
 
 
 
+
+/**
+* Logos
+*/
+
 .logo {
   width: 100%;
   display: block;
 }
+.logo {
+  width: 75px;
+}
+
+.nycLogo {
+  
+}
+// .psalLogo,
+// .compLogo {
+//   width: 75px;
+// }
+
+// .erbLogo,
+// .macysLogo,
+// .moodsnapLogo {
+//   width: 200px;
+// }
+
+.mgLogo {
+  float: none;
+}
+
+.mgLogo {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  background-color: #fff;
+  float: left;
+  position: relative;
+  top: 26px;
+  left: 20px;
+  font-family: "Futura";
+}
 
 
 
-.rowContain img {
+
+
+
+img, .rowContain img {
   max-width: 100%;
 }
 
@@ -123,19 +173,6 @@ h4 {
 }
 
 
-
-.mgLogo {
-  width: 35px;
-  height: 35px;
-  border-radius: 100%;
-  border: 1px solid #fff;
-  background-color: #fff;
-  float: left;
-  position: relative;
-  top: 26px;
-  left: 20px;
-  font-family: "Futura";
-}
 
 
 
@@ -196,6 +233,14 @@ img.mobile {
 
 
 @media screen and (min-width: $breakpoint2) {
+
+  .desktopOnly {
+    display: block;
+  }
+
+  .mobileOnly {
+    display: none;
+  }
 
   .mainContain {
     max-width: 100%;

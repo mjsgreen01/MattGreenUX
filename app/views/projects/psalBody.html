@@ -1,86 +1,93 @@
-<div>
-  <div class="projectTitles">
-    <h2>{{vm.psalData.name}}</h2>
-    <h4>{{vm.psalData.projectType | uppercase}}</h4>
+<div class="fixedWidthGrid">
+  <!-- split this page up into multiple grids to accomodate the full-width images -->
+  <div class="row">
+    <div class="column projectTextColumn">
+      <div class="projectTitles mobileOnly">
+        <h2>{{vm.psalData.name}}</h2>
+        <h4>{{vm.psalData.projectType | uppercase}}</h4>
+      </div>
+
+
+      <div class="imageContain imageSet imageSet1 mobileOnly">
+        <img class="mobile news" src="images/psal/newsScreenshotMobile.jpg">
+        <img class="mobile bayside" src="images/psal/baysideScreenshotMobile.jpg">
+      </div>
+
+      <h2 class="desktopOnly">The Problem</h2>
+      <div>
+        <p>
+          New York City has the largest public school athletic system in the country (PSAL). Over 150,000 people visit its website every month, but mostly from mobile devices.
+        </p>
+        <p>
+          VGD created a mobile app to help athletes, staff, and fans follow their favorite sports on the go. I was the UX lead on the project, while supporting our dev team and project management.
+        </p>
+      </div>
+
+
+      <div class="imageContain imageSet imageSet2 mobileOnly">
+        <img class="mobile" src="images/psal/websiteScreenshotMobile.jpg">
+        <img class="mobile" src="images/psal/chartMobile.jpg">
+      </div>
+
+
+      <h2>Research & Interviews</h2>
+      <div>
+        <p> Google Analytics revealed clear trends in user behavior. I could see that traffic consistently spiked after school and in the evening, after events.
+        </p>
+        <!-- end fixed-width grid here -->
+        <!-- start full-width grid here (desktop only) -->
+        <!-- add full-width images -->
+        <!-- end full-width grid -->
+        <!-- start new fixed-width grid for rest of content on this page (until footer) -->
+        <p> But why?
+        </p>
+        <p> To learn more, my team interviewed athletes, coaches, parents, PSAL staff, and athletic directors.
+        </p>
+        <p> We learned that people rely on the website to find event locations, rosters, rules and regulations. However, the site wasn’t designed for mobile devices, so people ended up calling PSAL’s office for help.
+        </p>
+      </div>
+
+
+      <h2>Prototypes & Testing</h2>
+      <div>
+        <p>Athletes, coaches, and PSAL staff tested early Axure prototypes such as this one. We went through several itterations before settling on the app’s information architecture.</p>
+      </div>
+
+
+      <div class="imageContain imageSet imageSet3">
+        <img class="mobile" src="images/psal/mockup1Mobile.jpg">
+        <img class="mobile" src="images/psal/mockup2Mobile.jpg">
+      </div>
+
+
+      <div>
+        <p>Then I refined critical user flows, such as the login and registration process, through higher fidelity prototypes built in proto.io.</p>
+      </div>
+
+
+      <div class="imageContain imageSet imageSet4">
+        <img class="mobile" src="images/psal/mockup3Mobile.jpg">
+      </div>
+
+
+      <h2>Specs & User Flows</h2>
+      <div>
+        <p>I wrote all functional specs for our dev team and worked with PSAL to design their web services. </p>
+        <p>I also used Omnigraffle to create an interactive map of user flows. This helped our stakeholders understand the nuances of the app and visualize the progress we were making.</p>
+      </div>
+
+
+      <div class="imageContain imageSet imageSet5">
+        <img class="mobile" src="images/psal/userFlowMobile.jpg">
+      </div>
+
+
+      <h2>Design & Development</h2>
+      <div>
+        <p>The app’s design strives to capture our users’ passion for sports; without sacrificing usability. That’s why we made sure it would curate content to each user needs.</p>
+        <p>Everyone from officials to parents and even college scouts will find this app to be a simple and indispensable tool. The iPhone app will be released this winter, with an Android version following next year.</p>
+      </div>
+    </div>
   </div>
-
-
-  <div class="imageContain imageSet imageSet1">
-    <img class="mobile news" src="images/psal/newsScreenshotMobile.jpg">
-    <img class="mobile bayside" src="images/psal/baysideScreenshotMobile.jpg">
-  </div>
-
-
-  <div>
-    <p>
-      New York City has the largest public school athletic system in the country (PSAL). Over 150,000 people visit its website every month, but mostly from mobile devices.
-    </p>
-    <p>
-      VGD created a mobile app to help athletes, staff, and fans follow their favorite sports on the go. I was the UX lead on the project, while supporting our dev team and project management.
-    </p>
-  </div>
-
-
-  <div class="imageContain imageSet imageSet2">
-    <img class="mobile" src="images/psal/websiteScreenshotMobile.jpg">
-    <img class="mobile" src="images/psal/chartMobile.jpg">
-  </div>
-
-
-  <h2>Research & Interviews</h2>
-  <div>
-    <p> Google Analytics revealed clear trends in user behavior. I could see that traffic consistently spiked after school and in the evening, after events.
-    </p>
-    <p> But why?
-    </p>
-    <p> To learn more, my team interviewed athletes, coaches, parents, PSAL staff, and athletic directors.
-    </p>
-    <p> We learned that people rely on the website to find event locations, rosters, rules and regulations. However, the site wasn’t designed for mobile devices, so people ended up calling PSAL’s office for help.
-    </p>
-  </div>
-
-
-  <h2>Prototypes & Testing</h2>
-  <div>
-    <p>Athletes, coaches, and PSAL staff tested early Axure prototypes such as this one. We went through several itterations before settling on the app’s information architecture.</p>
-  </div>
-
-
-  <div class="imageContain imageSet imageSet3">
-    <img class="mobile" src="images/psal/mockup1Mobile.jpg">
-    <img class="mobile" src="images/psal/mockup2Mobile.jpg">
-  </div>
-
-
-  <div>
-    <p>Then I refined critical user flows, such as the login and registration process, through higher fidelity prototypes built in proto.io.</p>
-  </div>
-
-
-  <div class="imageContain imageSet imageSet4">
-    <img class="mobile" src="images/psal/mockup3Mobile.jpg">
-  </div>
-
-
-  <h2>Specs & User Flows</h2>
-  <div>
-    <p>I wrote all functional specs for our dev team and worked with PSAL to design their web services. </p>
-    <p>I also used Omnigraffle to create an interactive map of user flows. This helped our stakeholders understand the nuances of the app and visualize the progress we were making.</p>
-  </div>
-
-
-  <div class="imageContain imageSet imageSet5">
-    <img class="mobile" src="images/psal/userFlowMobile.jpg">
-  </div>
-
-
-  <h2>Design & Development</h2>
-  <div>
-    <p>The app’s design strives to capture our users’ passion for sports; without sacrificing usability. That’s why we made sure it would curate content to each user needs.</p>
-    <p>Everyone from officials to parents and even college scouts will find this app to be a simple and indispensable tool. The iPhone app will be released this winter, with an Android version following next year.</p>
-  </div>
-
-
 </div>
-
 

@@ -3,7 +3,15 @@
         height: 115px;
 
         .macysPreviewImage {
-        background-image: url('#{$image_path}macys/macysMobileFooter.jpg');
+            background-image: url('#{$image_path}macys/macysMobileFooter.jpg');
+        }
+
+        .psalPreviewImage {
+            background-image: url('#{$image_path}psal/psalMobileFooter.jpg');
+        }
+
+        .erbPreviewImage {
+            background-image: url('#{$image_path}erb/erbMobileFooter.jpg');
         }
         
     }

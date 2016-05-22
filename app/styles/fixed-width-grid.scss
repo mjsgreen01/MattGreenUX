@@ -6,6 +6,9 @@ $gutter_width: 20px;
   @include legacy-pie-clearfix();
   @include generate_helper_classes();
 
+  max-height: 100%;
+  overflow: hidden;
+
   .column {
     height: 100%;
   }
@@ -26,7 +29,7 @@ $total_width: $breakpoint2;
     @include legacy-pie-clearfix();
     @include generate_helper_classes();
     .projectTextColumn {
-      @include column(12, 0);
+      @include column(6, 0);
     }
 
   }
@@ -41,7 +44,7 @@ $total_width: $breakpoint3;
     @include legacy-pie-clearfix();
     @include generate_helper_classes();
     .projectTextColumn {
-      @include column(12, 0);
+      
     }
 
   }
