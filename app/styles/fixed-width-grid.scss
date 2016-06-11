@@ -1,6 +1,6 @@
-$total_width: 320px;
+$total_width: 100%;
 $container_margin: auto;
-$gutter_width: 20px;
+$gutter_width: 10%; // must be percentage if total_width is percentage
 .fixedWidthGrid {
   @include container();
   @include legacy-pie-clearfix();
@@ -16,11 +16,12 @@ $gutter_width: 20px;
   .projectTextColumn {
     @include column(12, 0);
     box-sizing: border-box;
-    padding: 0px 20px
+    padding: 0px 52.5px
   }
 
 }
 
+$gutter_width: 20px;
 $total_width: $breakpoint2;
 @media screen and (min-width: $breakpoint2) {
   
@@ -30,6 +31,7 @@ $total_width: $breakpoint2;
     @include generate_helper_classes();
     .projectTextColumn {
       @include column(6, 0);
+      padding: 0px;
     }
 
   }

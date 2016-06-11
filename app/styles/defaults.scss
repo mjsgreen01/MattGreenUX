@@ -56,15 +56,40 @@ body {
   display: block;
 }
 
+.center {
+  text-align: center;
+}
+
+.fullWidth {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.greyscale {
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
+
 
 .projectPage {
 
   .imageSet {
     margin: 0 auto;
     max-width: 380px;
+
+    &.fullWidth {
+      @extend .fullWidth;
+    }
   }
 
   p, .imageSet {
+    margin-bottom: 30px;
+  }
+
+  h2 {
     margin-bottom: 30px;
   }
 }
