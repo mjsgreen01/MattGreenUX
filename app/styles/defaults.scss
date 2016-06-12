@@ -238,8 +238,14 @@ h4 {
 }
 
 
-img.mobile {
-  max-width: 100%;
+img {
+  &.mobile {
+    max-width: 100%;
+  }
+
+  &.desktop {
+    display: none;
+  }
 }
 
 
@@ -278,6 +284,24 @@ img.mobile {
     font-size: 37px;
     line-height: 43px;
   }
+
+  img {
+    &.mobile {
+      display: none;
+    }
+
+    &.desktop {
+      display: inline-block;
+    }
+  }
+
+  .projectPage {
+
+    .imageSet {
+      max-width: 100%;
+    }
+  }
+
 }
 
 

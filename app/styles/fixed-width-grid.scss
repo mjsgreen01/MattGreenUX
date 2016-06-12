@@ -13,7 +13,7 @@ $gutter_width: 10%; // must be percentage if total_width is percentage
     height: 100%;
   }
 
-  .projectTextColumn {
+  .textRow > .column, .imageRow > .column {
     @include column(12, 0);
     box-sizing: border-box;
     padding: 0px 52.5px
@@ -29,9 +29,16 @@ $total_width: $breakpoint2;
     @include container();
     @include legacy-pie-clearfix();
     @include generate_helper_classes();
-    .projectTextColumn {
-      @include column(6, 0);
-      padding: 0px;
+    .textRow, .imageRow {
+      .column {
+        padding: 0px;
+      }
+    }
+
+    .textRow {
+      > .column {
+        @include column(6, 0);
+      }
     }
 
   }
@@ -45,7 +52,7 @@ $total_width: $breakpoint3;
     @include container();
     @include legacy-pie-clearfix();
     @include generate_helper_classes();
-    .projectTextColumn {
+    .textRow .column, .imageRow .column {
       
     }
 
