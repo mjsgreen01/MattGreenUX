@@ -21,3 +21,43 @@
   }
 }
 
+
+
+
+@media screen and (min-width: $breakpoint2) {
+  .nestedRow {
+    img {
+      width: 65%;
+    }
+
+    &.nestedImageRow {
+      .column {
+        text-align: center;
+      }
+    }
+
+    &.theProblemScreenshotRow {
+
+      .column {
+        position: relative;
+
+        .theProblemScreenshot {
+          position: absolute;
+          z-index: 2;
+          margin-top: -40%;
+          right: 0;
+        }
+      }
+    }
+  }
+  
+
+}
+
+
+
+
+
+@media screen and (min-width: $breakpoint3) {
+
+}

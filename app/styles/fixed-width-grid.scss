@@ -7,7 +7,6 @@ $gutter_width: 10%; // must be percentage if total_width is percentage
   @include generate_helper_classes();
 
   max-height: 100%;
-  overflow: hidden;
 
   .column {
     height: 100%;
@@ -16,7 +15,7 @@ $gutter_width: 10%; // must be percentage if total_width is percentage
   .textRow > .column, .imageRow > .column {
     @include column(12, 0);
     box-sizing: border-box;
-    padding: 0px 52.5px
+    padding: 0px 52.5px;
   }
 
 }
@@ -52,8 +51,8 @@ $total_width: $breakpoint3;
     @include container();
     @include legacy-pie-clearfix();
     @include generate_helper_classes();
-    .textRow .column, .imageRow .column {
-      
+    .textRow .column{
+      @include column(6, 0);
     }
 
   }
