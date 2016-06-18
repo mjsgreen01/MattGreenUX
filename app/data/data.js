@@ -18,6 +18,15 @@
       "logoColor": "images/erb/erbLogoColor.png",
       "descriptionUrl": ""
     },
+    "immig": {
+      "name": "Immigration 1880-1924",
+      "alias": "immig",
+      "projectType": "tablet app",
+      "bgImage": "",
+      "logoWhite": "images/immig_logo.png",
+      "logoColor": "images/immig/immigLogoColor.png",
+      "descriptionUrl": ""
+    },
     "macys": {
       "name": "Thanksgiving Day Parade",
       "alias": "macys",

@@ -30,11 +30,16 @@
         <div ng-include="'views/projects/psalBody.html'"></div>
   </div>
 
-  <div class="fullWidthGrid footerNav">
+  <div class="fixedWidthGrid footerNav">
     <div class="row previewRow">
-      <div class="column">
+      <div class="column col6">
         <div class="previewImageContain erbPreviewImage">
           <a class="projectLink" ui-sref="app.erb"></a>
+        </div>
+      </div>
+      <div class="column col6 push6">
+        <div class="previewImageContain immigPreviewImage">
+          <a class="projectLink" ui-sref="app.immig"></a>
         </div>
       </div>
     </div>

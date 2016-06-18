@@ -28,11 +28,19 @@
   .nestedRow {
     img {
       width: 65%;
+
+      &.mockup1Desktop {
+        width: 90%;
+      }
     }
 
     &.nestedImageRow {
       .column {
         text-align: center;
+
+        &.leftAlign {
+          text-align: left;
+        }
       }
     }
 
@@ -50,7 +58,6 @@
       }
     }
   }
-  
 
 }
 
