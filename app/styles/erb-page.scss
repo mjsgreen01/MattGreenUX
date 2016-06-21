@@ -1,0 +1,42 @@
+
+.erbProjectPage {
+
+  
+}
+
+
+
+
+@media screen and (min-width: $breakpoint2) {
+  .erbProjectPage {
+
+    .projectHeadSection {
+      
+      .erbPreviewImage {
+        position: relative;
+        background-image: url("../../images/erb/desktop/erbDesktopHeader.jpg");
+
+        .erbScreenshot1 {
+          width: 42%;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          max-width: 600px;
+        }
+        
+      }
+      
+    }
+
+  }
+  
+
+}
+
+
+
+
+
+@media screen and (min-width: $breakpoint3) {
+
+}

@@ -2,7 +2,24 @@
   <div class="fullWidthGrid projectHeadSection desktopOnly">
     <div class="row previewRow erbRow">
       <div class="column projectHeaderColumn">
-        <div class="previewImageContain"></div>
+        <div class="previewImageContain erbPreviewImage">
+          
+          <div class="fixedWidthGrid">
+            <div class="row firstRow">
+              <div class="column col8">
+                <div>
+                  <img class="logo erbLogo" src="images/erbLogo1.png">
+                </div>
+                <div class="projectTitles">
+                  <h2>{{vm.erbData.name}}</h2>
+                  <h4>{{vm.erbData.projectType | uppercase}}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="desktop erbScreenshot1" src="images/erb/desktop/appScreenshotDesktop1.jpg">
+
+        </div>
       </div>
     </div>
   </div>
