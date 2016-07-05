@@ -151,23 +151,13 @@ body {
 //   width: 200px;
 // }
 
-.mgLogo {
-  float: none;
-}
+.mguxLogo {
+  width: 45px;
 
-.mgLogo {
-  width: 35px;
-  height: 35px;
-  border-radius: 100%;
-  border: 1px solid #fff;
-  background-color: #fff;
-  float: left;
-  position: relative;
-  top: 26px;
-  left: 20px;
-  font-family: "Futura";
+  &.blackLogo {
+    opacity: 0.2;
+  }
 }
-
 
 
 

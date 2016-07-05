@@ -1,6 +1,7 @@
 <div class="{{project.alias}}Row previewRow rowContain row">
   <div class="column titleColumn">
     <div class="titleContain">
+      <img ng-if="index === 0" class="mguxLogo blackLogo desktop" src="images/global/mguxLogoBlack.png">
       <div class="projectTitles">
         <div class="logoContain">
           <img class="logo {{project.alias}}Logo" ng-src="{{project.logoColor}}">
@@ -12,6 +13,7 @@
     </div>
   </div>
   <div class="column previewImageColumn">
+    <img ng-if="index === 0" class="mguxLogo mobile" src="images/global/mguxLogoWhite.png">
     <div class="previewImageContain">
       <a class="projectLink" ui-sref="app.{{project.alias}}"></a>
     </div>

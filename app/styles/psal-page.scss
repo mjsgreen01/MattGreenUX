@@ -19,6 +19,15 @@
       float: right;
     }
   }
+
+  .mguxLogo {
+    position: static;
+
+    &.mobile {
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+  }
 }
 
 

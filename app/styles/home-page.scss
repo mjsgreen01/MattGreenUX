@@ -39,7 +39,7 @@
   }
 
   .erbRow .previewImageContain, .erbPreviewImage {
-    background-image: url('#{$image_path}erb/erbMobileHome.jpg');
+    background-image: url('#{$image_path}erb/mobile/erbMobileHome.jpg');
   }
 
   .macysRow .previewImageContain, .macysPreviewImage {
@@ -104,8 +104,20 @@
     display: none;
   }
 
+  .mguxLogo {
+    position: absolute;
 
+    &.mobile {
+      top: 30px;
+      left: 30px;
+    }
 
+    &.desktop {
+      top: 10%;
+      left: 15%;
+    }
+  }
+  
 
 
 
@@ -124,10 +136,10 @@
 
   @media screen and (min-width: $breakpoint2) {
     .psalRow .previewImageContain, .psalPreviewImage {
-      background-image: url('#{$image_path}psal/psalDesktopHome.jpg');
+      background-image: url('#{$image_path}psal/desktop/psalDesktopHome.jpg');
     }
     .erbRow .previewImageContain, .erbPreviewImage {
-      background-image: url('#{$image_path}erb/erbDesktopHome.jpg');
+      background-image: url('#{$image_path}erb/desktop/erbDesktopHome.jpg');
     }
     .macysRow .previewImageContain, .macysPreviewImage {
       background-image: url('#{$image_path}macysBG3.jpg');
@@ -148,6 +160,7 @@
         height: 100%;
         width: 100%;
         vertical-align: top;
+        position: relative;
 
         .projectTitles {
           position: relative;

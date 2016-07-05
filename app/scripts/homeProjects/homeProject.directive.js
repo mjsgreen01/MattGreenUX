@@ -33,7 +33,8 @@ angular.module('mattGreenUX')
     restrict: 'EA',
     templateUrl: '/views/homeProject.html',
     scope: {
-      "project": "="
+      "project": "=",
+      "index": "="
     },
     controller: controller,
     controllerAs: 'homeProject',
