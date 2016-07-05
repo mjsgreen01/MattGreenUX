@@ -1,0 +1,44 @@
+.projectPage {
+    .mguxLogo {
+      position: static;
+
+      &.mobile {
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+
+      &.desktop {
+        margin-bottom: 30px;
+        opacity: .2
+      }
+    }
+
+    .imageSet {
+      margin: 0 auto;
+      max-width: 380px;
+
+      &.fullWidth {
+        @extend .fullWidth;
+      }
+    }
+
+    p, .imageSet {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (min-width: $breakpoint2) {
+
+  .projectPage {
+
+    .imageSet {
+      max-width: 100%;
+    }
+  }
+
+}

@@ -74,26 +74,6 @@ body {
 
 
 
-.projectPage {
-
-  .imageSet {
-    margin: 0 auto;
-    max-width: 380px;
-
-    &.fullWidth {
-      @extend .fullWidth;
-    }
-  }
-
-  p, .imageSet {
-    margin-bottom: 30px;
-  }
-
-  h2 {
-    margin-bottom: 30px;
-  }
-}
-
 
 .mainContain {
   width: 100%;
@@ -282,13 +262,6 @@ img {
 
     &.desktop {
       display: inline-block;
-    }
-  }
-
-  .projectPage {
-
-    .imageSet {
-      max-width: 100%;
     }
   }
 
