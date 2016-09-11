@@ -60,6 +60,11 @@ angular
         templateUrl: 'views/projects/erb.html',
         controller: 'erbCtrl as vm'
       })
+      .state('app.immig', {
+        url: '/immig',
+        templateUrl: 'views/projects/immig.html',
+        controller: 'immigCtrl as vm'
+      })
       .state('app.about', {
         url: '/about',
         templateUrl: 'views/about.html',

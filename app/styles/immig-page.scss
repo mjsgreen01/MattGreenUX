@@ -1,0 +1,37 @@
+
+.immigProjectPage {
+  
+  .projectTitles h2 {
+    color: #000;
+  }
+}
+
+
+
+
+@media screen and (min-width: $breakpoint2) {
+  .immigProjectPage {
+
+    .projectHeadSection {
+      
+      .immigPreviewImage {
+        position: relative;
+        background-image: url("../../images/immig/desktop/immigDesktopHeader.jpg");
+
+        
+      }
+      
+    }
+
+  }
+  
+
+}
+
+
+
+
+
+@media screen and (min-width: $breakpoint3) {
+
+}

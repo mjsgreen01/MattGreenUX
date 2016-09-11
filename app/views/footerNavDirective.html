@@ -1,13 +1,13 @@
 <div class="footerNav" ng-class="vm.isMobile ? 'fullWidthGrid' : 'fixedWidthGrid'">
     <div class="row previewRow">
       <div class="column col6">
-        <div class="previewImageContain psalPreviewImage">
-          <a class="projectLink" ui-sref="app.psal"></a>
+        <div class="previewImageContain {{vm.otherProjects[0]}}PreviewImage">
+          <a class="projectLink" ui-sref="app.{{vm.otherProjects[0]}}"></a>
         </div>
       </div>
       <div class="column col6 push6">
-        <div class="previewImageContain macysPreviewImage">
-          <a class="projectLink" ui-sref="app.macys"></a>
+        <div class="previewImageContain {{vm.otherProjects[1]}}PreviewImage">
+          <a class="projectLink" ui-sref="app.{{vm.otherProjects[1]}}"></a>
         </div>
       </div>
     </div>

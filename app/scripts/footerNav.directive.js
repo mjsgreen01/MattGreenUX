@@ -5,8 +5,14 @@ angular.module('mattGreenUX')
 .directive('footerNavDirective', function(resize){
   var controller = function(){
     var vm = this;
-    
-    vm.setIsMobile = function($event){
+    vm.setIsMobile = setIsMobile;
+
+    vm.setIsMobile({});
+
+     function setIsMobile($event){
+      if (!$event.width) {
+        $event.width = $(window).width();
+      }
       vm.isMobile = $event.width < 800;
     };
   };
@@ -15,6 +21,7 @@ angular.module('mattGreenUX')
     restrict: 'EA',
     templateUrl: '/views/footerNavDirective.html',
     scope: {
+      otherProjects: '='
     },
     controller: controller,
     controllerAs: 'vm',

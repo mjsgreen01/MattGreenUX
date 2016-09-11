@@ -1,0 +1,35 @@
+<div class="immigProjectPage projectPage">
+  <div class="fullWidthGrid projectHeadSection desktopOnly">
+    <div class="row previewRow immigRow">
+      <div class="column projectHeaderColumn">
+        <div class="previewImageContain immigPreviewImage">
+          
+          <div class="fixedWidthGrid">
+            <div class="row firstRow">
+              <div class="column col8">
+                <img class="mguxLogo desktop" src="images/global/mguxLogoBlack.png">
+                <div>
+                  <img class="logo immigLogo" src="images/immigLogo1.png">
+                </div>
+                <div class="projectTitles">
+                  <h2>{{vm.immigData.name}}</h2>
+                  <h4>{{vm.immigData.projectType | uppercase}}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="desktop immigScreenshot1" src="images/immig/desktop/appScreenshotDesktop1.jpg">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectBodySection">
+        <div ng-include="'views/projects/immigBody.html'"></div>
+  </div>
+  
+  <footer-nav-directive
+    other-projects="['erb', 'psal']">
+  </footer-nav-directive>
+</div>

@@ -1,22 +1,50 @@
-.footerNav.fullWidthGrid {
-    .previewRow {
-        height: 115px;
+.footerNav{
+    
+    // mobile-size screen
+    &.fullWidthGrid {
+        .previewRow {
+            height: 115px;
 
-        .macysPreviewImage {
-            background-image: url('#{$image_path}macys/macysMobileFooter.jpg');
-        }
+            .macysPreviewImage {
+                background-image: url('#{$image_path}macys/macysMobileFooter.jpg');
+            }
 
-        .psalPreviewImage {
-            background-image: url('#{$image_path}psal/mobile/psalMobileFooter.jpg');
-        }
+            .psalPreviewImage {
+                background-image: url('#{$image_path}psal/mobile/psalMobileFooter.jpg');
+            }
 
-        .erbPreviewImage {
-            background-image: url('#{$image_path}erb/erbMobileFooter.jpg');
-        }
+            .erbPreviewImage {
+                background-image: url('#{$image_path}erb/mobile/erbMobileFooter.jpg');
+            }
 
-        .immigPreviewImage {
-            background-image: url('#{$image_path}immig/immigMobileFooter.jpg');
+            .immigPreviewImage {
+                background-image: url('#{$image_path}immig/mobile/immigMobileFooter.jpg');
+            }
+            
         }
-        
     }
+
+    // desktop-size screen
+    &.fixedWidthGrid {
+        .previewRow {
+            height: 315px;
+
+            .macysPreviewImage {
+                background-image: url('#{$image_path}macys/macysDesktopFooter.jpg');
+            }
+
+            .psalPreviewImage {
+                background-image: url('#{$image_path}psal/desktop/psalDesktopFooter.jpg');
+            }
+
+            .erbPreviewImage {
+                background-image: url('#{$image_path}erb/desktop/erbDesktopFooter.jpg');
+            }
+
+            .immigPreviewImage {
+                background-image: url('#{$image_path}immig/desktop/immigDesktopFooter.jpg');
+            }
+            
+        }
+    }    
 }
