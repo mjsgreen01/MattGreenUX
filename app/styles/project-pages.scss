@@ -9,7 +9,11 @@
 
       &.desktop {
         margin-bottom: 30px;
-        opacity: .2
+        opacity: .2;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
 
