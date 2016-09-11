@@ -15,7 +15,8 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ngResize'
     // 'mattGreenUX.project'
   ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
