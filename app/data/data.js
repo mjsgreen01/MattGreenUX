@@ -6,7 +6,7 @@
       "projectType": "mobile app",
       "bgImage": "",
       "logoWhite": "images/nyc_logo.png",
-      "logoColor": "images/psal/psalLogoColor.png",
+      "logoColor": "images/psal/psalLogoColor.jpg",
       "descriptionUrl": ""
     },
     "erb": {
@@ -15,7 +15,7 @@
       "projectType": "tablet & web apps",
       "bgImage": "",
       "logoWhite": "images/erbLogo1.png",
-      "logoColor": "images/erb/erbLogoColor.png",
+      "logoColor": "images/erb/erbLogoColor.jpg",
       "descriptionUrl": ""
     },
     "immig": {
@@ -24,7 +24,7 @@
       "projectType": "tablet app",
       "bgImage": "",
       "logoWhite": "images/immig_logo.png",
-      "logoColor": "images/immig/immigLogoColor.png",
+      "logoColor": "images/immig/immigLogoColor.jpg",
       "descriptionUrl": ""
     },
     "macys": {
