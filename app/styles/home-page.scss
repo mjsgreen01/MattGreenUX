@@ -42,6 +42,10 @@
     background-image: url('#{$image_path}erb/mobile/erbMobileHome.jpg');
   }
 
+  .immigRow .previewImageContain, .immigPreviewImage {
+    background-image: url('#{$image_path}immig/mobile/immigMobileHome.jpg');
+  }
+
   .macysRow .previewImageContain, .macysPreviewImage {
     background-image: url('#{$image_path}macysBG3.jpg');
   }
@@ -140,6 +144,9 @@
     }
     .erbRow .previewImageContain, .erbPreviewImage {
       background-image: url('#{$image_path}erb/desktop/erbDesktopHome.jpg');
+    }
+    .immigRow .previewImageContain, .immigPreviewImage {
+      background-image: url('#{$image_path}immig/desktop/immigDesktopHome.jpg');
     }
     .macysRow .previewImageContain, .macysPreviewImage {
       background-image: url('#{$image_path}macysBG3.jpg');

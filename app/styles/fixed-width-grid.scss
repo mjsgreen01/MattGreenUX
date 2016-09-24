@@ -35,7 +35,7 @@ $total_width: $breakpoint2;
     }
 
     .textRow {
-      > .column {
+      > .column.textColumn {
         @include column(6, 0);
       }
     }
@@ -51,7 +51,7 @@ $total_width: $breakpoint3;
     @include container();
     @include legacy-pie-clearfix();
     @include generate_helper_classes();
-    .textRow .column{
+    .textRow .column.textColumn{
       @include column(6, 0);
     }
 
