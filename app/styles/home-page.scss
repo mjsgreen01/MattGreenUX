@@ -100,7 +100,7 @@
     margin-top: 40px;
     font-family: "MuseoSans-300", sans-serif;
     font-size: 14px;
-    color: #bbb;
+    color: rgba(0,0,0,.25);
     text-decoration: underline;
   }
 
@@ -178,6 +178,16 @@
           top: 33%;
           left: 15%;
           width: 74%;
+        }
+
+        .projectTextLink {
+          &:hover {
+            color: rgba(0,0,0,0.50);
+          }
+
+          &:active {
+            color: rgba(0,0,0,1);
+          }
         }
       }
 
