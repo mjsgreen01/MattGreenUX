@@ -1,6 +1,7 @@
 .projectPage {
     .mguxLogo {
       position: static;
+      opacity: 0.1;
 
       &.mobile {
         margin-top: 30px;
@@ -9,11 +10,15 @@
 
       &.desktop {
         margin-bottom: 30px;
-        opacity: .2;
 
-        &:hover {
-          opacity: 1;
-        }
+      }
+      
+      &:hover {
+        opacity: 0.25;
+      }
+
+      &:active {
+        opacity: 1;
       }
     }
 
