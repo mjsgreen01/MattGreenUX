@@ -3,7 +3,7 @@ angular.module('mattGreenUX')
 
 
 .directive('homeProject', function(){
-  var controller = function(){
+  var controller = function($state){
     // var vm = this;
     
     var winHeight = $(window).height();
@@ -24,8 +24,11 @@ angular.module('mattGreenUX')
 
     // Question: Is this better than doing a $watch on window-height?
     $( window ).resize(function() {
-      winHeight = $(window).height();
-      homeResize();
+      // if on the home page
+      if ($state.includes('projects')) {
+        winHeight = $(window).height();
+        homeResize();
+      }
     });
   };
 
