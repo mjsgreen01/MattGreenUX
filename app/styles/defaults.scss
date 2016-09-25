@@ -190,7 +190,15 @@ h4 {
 
     .fa {
       font-size: 30px;
-      opacity: .2;
+      opacity: 0.2;
+
+      &:hover {
+        opacity: 0.5;        
+      }
+
+      &:active {
+        opacity: 1;        
+      }
     }
 
     .linkedIn {
