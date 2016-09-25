@@ -25,35 +25,48 @@
 
 
 @media screen and (min-width: $breakpoint2) {
-  .nestedRow {
-    img {
-      width: 65%;
+  .psalProjectPage {
 
-      &.mockup1Desktop {
-        width: 90%;
+    .psalHeadRightCol {
+      position: relative;
+      height: 395px;
+
+      .newsImg {
+        position: absolute;
+        bottom: 0;
       }
     }
 
-    &.nestedImageRow {
-      .column {
-        text-align: center;
+    .nestedRow {
+      img {
+        width: 65%;
 
-        &.leftAlign {
-          text-align: left;
+        &.mockup1Desktop {
+          width: 90%;
         }
       }
-    }
 
-    &.theProblemScreenshotRow {
+      &.nestedImageRow {
+        .column {
+          text-align: center;
 
-      .column {
-        position: relative;
+          &.leftAlign {
+            text-align: left;
+          }
+        }
+      }
 
-        .theProblemScreenshot {
-          position: absolute;
-          z-index: 2;
-          margin-top: -40%;
-          right: 0;
+      &.theProblemScreenshotRow {
+
+        .column {
+          position: relative;
+
+          .theProblemScreenshot {
+            position: absolute;
+            z-index: 2;
+            margin-top: -40%;
+            right: 0;
+          }
         }
       }
     }
@@ -66,5 +79,10 @@
 
 
 @media screen and (min-width: $breakpoint3) {
+  .psalProjectPage {
 
+    .psalHeadRightCol {
+      height: 365px;
+    }
+  }
 }
