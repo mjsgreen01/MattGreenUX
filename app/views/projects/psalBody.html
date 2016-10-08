@@ -2,7 +2,9 @@
     <!-- split this page up into multiple grids to accomodate the full-width images -->
     <div class="row textRow">
         <div class="column textColumn">
-            <img class="mguxLogo blackLogo mobile" src="images/global/mguxLogoBlack.png">
+            <a ui-sref="app.projects">
+                <img class="mguxLogo blackLogo mobile" src="images/global/mguxLogoBlack.png">
+            </a>
             <div class="projectTitles mobileOnly">
                 <h2>{{vm.psalData.name}}</h2>
                 <h4>{{vm.psalData.projectType | uppercase}}</h4>
