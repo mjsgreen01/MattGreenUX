@@ -15,7 +15,7 @@ $gutter_width: 10%; // must be percentage if total_width is percentage
   .textRow > .column, .imageRow > .column {
     @include column(12, 0);
     box-sizing: border-box;
-    padding: 0px 52.5px;
+    padding: 0px 25px;
   }
 
 }
