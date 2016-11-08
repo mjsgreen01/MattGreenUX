@@ -180,6 +180,12 @@
           width: 74%;
         }
 
+        .projectTitleLink {
+          &:active {
+            color: rgba(0,0,0,0.80);
+          }
+        }
+
         .projectTextLink {
           &:hover {
             color: rgba(0,0,0,0.50);

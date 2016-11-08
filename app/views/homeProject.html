@@ -6,7 +6,7 @@
         <div class="logoContain">
           <img class="logo {{project.alias}}Logo" ng-src="{{project.logoColor}}">
         </div>
-        <h2>{{project.name}}</h2>
+        <h2><a class="projectTitleLink" ui-sref="app.{{project.alias}}">{{project.name}}</a></h2>
         <h4>{{project.projectType | uppercase}}</h4>
         <p><a class="projectTextLink" ui-sref="app.{{project.alias}}">{{project.homeSubTitle}}</a></p>
       </div>
