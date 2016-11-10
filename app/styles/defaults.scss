@@ -44,8 +44,8 @@
 body {
   font-family: "MuseoSans-300", sans-serif;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .desktopOnly {
@@ -145,6 +145,13 @@ body {
 
 img, .rowContain img {
   max-width: 100%;
+}
+
+h1 {
+  font-family: "MuseoSans-900", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  margin-top: 20px;
 }
 
 h2 {
@@ -279,12 +286,20 @@ img {
 
 
 @media screen and (min-width: $breakpoint3) {
+  h1 {
+    font-size: 75px;
+    line-height: 90px;
+  }
   h2 {
-    font-size: 57px;
-    line-height: 64px;
+    font-size: 30px;
+    line-height: 60px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 60px;
   }
   h4 {
-    font-size: 21px;
+    font-size: 20px;
     line-height: 35px;
   }
 }
