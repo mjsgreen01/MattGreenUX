@@ -181,6 +181,7 @@
         }
 
         .projectTitleLink {
+
           &:active {
             color: rgba(0,0,0,0.80);
           }
@@ -205,5 +206,13 @@
     }
 
   }
+  
+  @media screen and (min-width: $breakpoint3) {
+    .projectTitleLink {
+      font-size: 60px;
+      line-height: 68px;
+    }
+  }
+          
 
 }
