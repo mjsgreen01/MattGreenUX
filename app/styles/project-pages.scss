@@ -48,6 +48,26 @@
   .projectPage {
 
     .previewRow {
+      height: 450px;
+    }
+
+    .imageSet {
+      max-width: 100%;
+    }
+
+    .projectBodySection {
+      margin-bottom: 70px;
+    }
+  }
+
+}
+
+
+@media screen and (min-width: $breakpoint3) {
+
+  .projectPage {
+
+    .previewRow {
       height: 540px;
     }
 
