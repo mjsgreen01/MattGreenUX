@@ -44,8 +44,8 @@
 body {
   font-family: "MuseoSans-300", sans-serif;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .desktopOnly {
@@ -149,15 +149,15 @@ img, .rowContain img {
 
 h1 {
   font-family: "MuseoSans-900", sans-serif;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 36px;
+  line-height: 40px;
   margin-top: 20px;
 }
 
 h2 {
   font-family: "MuseoSans-900", sans-serif;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 30px;
+  line-height: 36px;
   margin-top: 20px;
 }
 
@@ -169,7 +169,7 @@ h3 {
 
 h4 {
   font-family: "MuseoSans-300", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: rgba(191,191,191,1);
   line-height: 24px;
 }
@@ -262,6 +262,10 @@ img {
     max-width: 100%;
   }
   
+  .mguxLogo {
+    width: 60px;
+  }
+
   h1 {
    font-size: 60px;
    line-height: 72px;
@@ -290,6 +294,10 @@ img {
 
 
 @media screen and (min-width: $breakpoint3) {
+  .mguxLogo {
+    width: 72px;
+  }
+
   h1 {
     font-size: 75px;
     line-height: 90px;
