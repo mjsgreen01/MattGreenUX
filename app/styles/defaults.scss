@@ -52,8 +52,16 @@ body {
   display: none;
 }
 
+a.desktopOnly {
+  display: none;
+}
+
 .mobileOnly {
   display: block;
+}
+
+a.mobileOnly {
+  display: inline-flex;
 }
 
 .center {
@@ -178,7 +186,6 @@ h4 {
 
 
 
-
 .footContain {
   padding-bottom: 40px;
   padding-top: 70px;
@@ -254,7 +261,15 @@ img {
     display: block;
   }
 
+  a.desktopOnly {
+    display: inline-flex;
+  }
+
   .mobileOnly {
+    display: none;
+  }
+
+  a.mobileOnly {
     display: none;
   }
 
