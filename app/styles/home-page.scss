@@ -205,10 +205,15 @@
 
     }
 
+    .projectTitle {
+      font-size: 48px;
+      line-height: 54px;
+    }
+
   }
   
   @media screen and (min-width: $breakpoint3) {
-    .projectTitleLink {
+    .projectTitle {
       font-size: 60px;
       line-height: 68px;
     }
