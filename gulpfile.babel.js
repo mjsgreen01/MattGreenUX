@@ -17,7 +17,7 @@ gulp.task('styles', () => {
       precision: 10,
       includePaths: ['.']
     }).on('error', $.sass.logError))
-    .pipe($.autoprefixer({browsers: ['last 1 version']}))
+    .pipe($.autoprefixer({browsers: ['last 3 version']}))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('app/styles/build'))
     .pipe(reload({stream: true}));
@@ -46,12 +46,26 @@ gulp.task('html', ['styles'], () => {
 
   return gulp.src('app/*.html')
     .pipe(assets)
-    .pipe($.if(['*.js', '!*.css'], $.ngAnnotate()))
-    .pipe($.if(['*.js', '!*.css'], $.uglify()))
-    .pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
     .pipe(assets.restore())
-    .pipe($.useref())
-    .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
+    .pipe(gulp.dest('dist/public'));
+});
+
+gulp.task('scripts-build', ['html'], () => {
+  return gulp.src('dist/public/scripts/*.js')
+    .pipe($.ngAnnotate())
+    .pipe($.uglify())
+    .pipe(gulp.dest('dist/public/scripts'));
+});
+
+gulp.task('styles-build', ['html'], () => {
+  return gulp.src('dist/public/styles/build/*.css')
+    .pipe($.minifyCss({compatibility: '*'}))
+    .pipe(gulp.dest('dist/public/styles/build'));
+});
+
+gulp.task('html-build', ['html'], () => {
+  return gulp.src('dist/public/index.html')
+    .pipe($.minifyHtml({conditionals: true, loose: true}))
     .pipe(gulp.dest('dist/public'));
 });
 
@@ -166,7 +180,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['html', 'images', 'views', 'data', 'fonts', 'extras'], () => {
+gulp.task('build', ['html-build', 'scripts-build', 'styles-build', 'images', 'views', 'data', 'fonts', 'extras'], () => {
   return gulp.src('dist/public/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

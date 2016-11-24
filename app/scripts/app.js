@@ -17,7 +17,6 @@ angular
     'ngSanitize',
     'ngTouch',
     'ngResize'
-    // 'mattGreenUX.project'
   ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
