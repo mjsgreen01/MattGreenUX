@@ -46,8 +46,8 @@ gulp.task('html', ['styles'], () => {
 
   return gulp.src('app/*.html')
     .pipe(assets)
-    .pipe($.if('*.js', $.ngAnnotate()))
-    .pipe($.if('*.js', $.uglify()))
+    .pipe($.if(['*.js', '!*.css'], $.ngAnnotate()))
+    .pipe($.if(['*.js', '!*.css'], $.uglify()))
     .pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
     .pipe(assets.restore())
     .pipe($.useref())
