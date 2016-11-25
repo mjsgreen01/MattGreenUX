@@ -195,14 +195,15 @@ a {
 
 
 .footContain {
-  padding-bottom: 18px;
+  padding-bottom: 27px;
   padding-top: 45px;
   background-color: black;
   color: white;
 
   .contactEmail {
-    margin-bottom: 27px;
+    margin-bottom: 33px;
     text-align: center;
+    letter-spacing: 2px;
   }
 
   .socialLinksContain {
@@ -213,6 +214,7 @@ a {
     .fa {
       font-size: 30px;
       opacity: 0.2;
+      vertical-align: middle;
 
       &:hover {
         opacity: 0.5;        
@@ -323,6 +325,7 @@ img {
     .contactEmail {
       float: left;
       margin-bottom: 0px;
+      letter-spacing: 0px;
     }
 
     .socialLinksContain {
