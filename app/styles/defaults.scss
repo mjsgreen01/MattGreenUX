@@ -195,19 +195,19 @@ a {
 
 
 .footContain {
-  padding-bottom: 40px;
-  padding-top: 70px;
+  padding-bottom: 18px;
+  padding-top: 45px;
   background-color: black;
   color: white;
 
   .contactEmail {
-    margin-bottom: 50px;
+    margin-bottom: 27px;
     text-align: center;
   }
 
   .socialLinksContain {
     margin: 0 auto;
-    width: 98px;
+    width: 108px;
     @include clearfix();
 
     .fa {
