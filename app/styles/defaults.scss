@@ -121,7 +121,7 @@ a.mobileOnly {
   display: block;
 }
 .logo {
-  width: 75px;
+  width: 72px;
 }
 
 .nycLogo {
@@ -129,7 +129,7 @@ a.mobileOnly {
 }
 // .psalLogo,
 // .compLogo {
-//   width: 75px;
+//   width: 72px;
 // }
 
 // .erbLogo,
@@ -289,7 +289,7 @@ img {
   }
   
   .mguxLogo {
-    width: 60px;
+    width: 54px;
   }
 
   p {
@@ -342,7 +342,11 @@ img {
 
 @media screen and (min-width: $breakpoint3) {
   .mguxLogo {
-    width: 72px;
+    width: 63px;
+  }
+
+  .logo {
+  width: 90px;
   }
 
   p {
