@@ -8,6 +8,7 @@
       "bgImage": "",
       "logoWhite": "images/nyc_logo.png",
       "logoColor": "images/psal/psalLogoColor.jpg",
+      "logoColorMobile": "images/psal/mobile/psalLogoColorMobile.jpg",
       "descriptionUrl": ""
     },
     "erb": {
@@ -18,6 +19,7 @@
       "bgImage": "",
       "logoWhite": "images/erbLogo1.png",
       "logoColor": "images/erb/erbLogoColor.jpg",
+      "logoColorMobile": "images/erb/mobile/erbLogoColorMobile.jpg",
       "descriptionUrl": ""
     },
     "immig": {
@@ -28,6 +30,7 @@
       "bgImage": "",
       "logoWhite": "images/immig_logo.png",
       "logoColor": "images/immig/immigLogoColor.jpg",
+      "logoColorMobile": "images/immig/mobile/immigLogoColorMobile.jpg",
       "descriptionUrl": ""
     },
     "macys": {
