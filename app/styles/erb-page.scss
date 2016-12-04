@@ -14,6 +14,7 @@
       
       .erbPreviewImage {
         position: relative;
+        overflow-x: hidden;
         background-image: url("../../images/erb/desktop/erbDesktopHeader.jpg");
 
         .erbScreenshot1 {

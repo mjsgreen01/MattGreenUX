@@ -20,6 +20,7 @@
       
       .immigPreviewImage {
         position: relative;
+        overflow-x: hidden;
         background-image: url("../../images/immig/desktop/immigDesktopHeader.jpg");
       
         .immigScreenshot1 {
