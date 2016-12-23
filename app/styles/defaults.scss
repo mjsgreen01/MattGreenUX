@@ -186,7 +186,13 @@ a {
 
   &.textLink {
     font-family: "MuseoSans-700", sans-serif;
-    text-decoration: underline;
+    color: rgba(25,90,175,1);
+    &:hover {
+      color: rgba(127,219,255,1);
+    }
+    &:active {
+      color: rgba(0,125,230,1);
+    }
   }
 }
 
