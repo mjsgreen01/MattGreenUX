@@ -28,6 +28,7 @@
     &.fixedWidthGrid {
         .previewRow {
             height: 315px;
+            margin-top: 48px;
 
             .macysPreviewImage {
                 background-image: url('#{$image_path}macys/macysDesktopFooter.jpg');
