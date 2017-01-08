@@ -1,7 +1,6 @@
 
 .erbProjectPage {
 
-  
 }
 
 
@@ -29,9 +28,12 @@
       
     }
 
+    .erbLogo {
+      margin-top: -9px;
+    }    
+
   }
   
-
 }
 
 
@@ -39,5 +41,10 @@
 
 
 @media screen and (min-width: $breakpoint3) {
-
+  .erbProjectPage {
+    .erbLogo {
+      margin-top: -12px;
+    }
+    
+  }
 }
