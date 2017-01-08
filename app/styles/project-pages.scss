@@ -25,6 +25,7 @@
     .imageSet {
       margin: 0 auto;
       max-width: 380px;
+      margin-top: 48px;
 
       &.fullWidth {
         @extend .fullWidth;
@@ -79,7 +80,7 @@
     }
 
     .footerNav {
-      margin-top: 96px;
+      margin-top: 90px;
       margin-bottom: 70px;
     }
   }
