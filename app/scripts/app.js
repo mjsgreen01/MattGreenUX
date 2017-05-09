@@ -56,7 +56,7 @@ angular
         controller: 'erbCtrl as vm'
       })
       .state('app.immig', {
-        url: '/immig',
+        url: '/immigration',
         templateUrl: 'views/projects/immig.html',
         controller: 'immigCtrl as vm'
       })
