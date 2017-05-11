@@ -4,7 +4,7 @@ angular.module('mattGreenUX')
 
   var ProjectsFactory = {
     projectsData: {},
-    projectsOrder: ['psal', 'erb', 'immig', 'macys', 'moodsnap']
+    projectsOrder: ['psal', 'immig', 'erb', 'macys', 'moodsnap']
   };
 
 
