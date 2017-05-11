@@ -3,7 +3,7 @@
     "psal": {
       "name": "Public Schools Athletic League",
       "alias": "psal",
-      "projectType": "mobile app",
+      "projectType": "mobile app - 2015",
       "homeSubTitle": "Read the Case Study",
       "bgImage": "",
       "logoWhite": "images/nyc_logo.png",
@@ -14,7 +14,7 @@
     "erb": {
       "name": "Admissions Assessment",
       "alias": "erb",
-      "projectType": "tablet & web apps",
+      "projectType": "tablet & web apps - 2013",
       "homeSubTitle": "See More",
       "bgImage": "",
       "logoWhite": "images/erbLogo1.png",
@@ -25,7 +25,7 @@
     "immig": {
       "name": "Immigration 1880-1924",
       "alias": "immig",
-      "projectType": "tablet app",
+      "projectType": "tablet app - 2014",
       "homeSubTitle": "See More",
       "bgImage": "",
       "logoWhite": "images/immig_logo.png",
