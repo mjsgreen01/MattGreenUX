@@ -1,0 +1,51 @@
+<div class="hunterProjectPage projectPage">
+  <div class="fullWidthGrid projectHeadSection desktopOnly">
+    <div class="row previewRow hunterRow">
+      <div class="column projectHeaderColumn">
+        <div class="previewImageContain hunterPreviewImage">
+          
+          <div class="fixedWidthGrid">
+            <div class="row firstRow">
+              <div class="column col7">
+                <a ui-sref="app.projects">
+                  <img class="mguxLogo desktop" src="images/global/mguxLogoWhite.png">
+                </a>
+                <div>
+                  <img class="projectLogoDesktop hunterLogo" src="images/cunyLogo1.png">
+                </div>
+                <div class="projectTitles">
+                  <h1>{{vm.hunterData.name}}</h1>
+                  <h4>{{vm.hunterData.projectType | uppercase}}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="desktop hunterScreenshot1" src="images/erb/desktop/appScreenshotDesktop1.png">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectBodySection">
+        <div ng-include="'views/projects/hunterBody.html'"></div>
+  </div>
+  
+  <footer-nav-directive
+    other-projects="['immig', 'psal']">
+  </footer-nav-directive>
+ <!--  <div class="fixedWidthGrid footerNav">
+    <div class="row previewRow">
+      <div class="column col6">
+        <div class="previewImageContain psalPreviewImage">
+          <a class="projectLink" ui-sref="app.psal"></a>
+        </div>
+      </div>
+      <div class="column col6 push6">
+        <div class="previewImageContain macysPreviewImage">
+          <a class="projectLink" ui-sref="app.macys"></a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>

@@ -5,6 +5,10 @@
         .previewRow {
             height: 115px;
 
+            .hunterPreviewImage {
+                background-image: url('#{$image_path}hunter/mobile/hunterMobileFooter.jpg');
+            }
+
             .macysPreviewImage {
                 background-image: url('#{$image_path}macys/macysMobileFooter.jpg');
             }
@@ -29,6 +33,10 @@
         .previewRow {
             height: 275px;
             margin-top: 30px;
+
+            .hunterPreviewImage {
+                background-image: url('#{$image_path}hunter/desktop/hunterDesktopFooter.jpg');
+            }
 
             .macysPreviewImage {
                 background-image: url('#{$image_path}macys/macysDesktopFooter.jpg');

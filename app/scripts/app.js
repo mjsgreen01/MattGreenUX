@@ -45,6 +45,11 @@ angular
         templateUrl: 'views/homeProjects.html',
         controller: 'ProjectsCtrl as vm'
       })
+      .state('app.hunter', {
+        url: '/hunter',
+        templateUrl: 'views/projects/hunter.html',
+        controller: 'hunterCtrl as vm'
+      })      
       .state('app.psal', {
         url: '/psal',
         templateUrl: 'views/projects/psal.html',

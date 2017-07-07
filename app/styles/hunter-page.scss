@@ -1,0 +1,50 @@
+
+.hunterProjectPage {
+
+}
+
+
+
+
+@media screen and (min-width: $breakpoint2) {
+  .hunterProjectPage {
+
+    .projectHeadSection {
+      
+      .hunterPreviewImage {
+        position: relative;
+        overflow-x: hidden;
+        background-image: url("../../images/hunter/desktop/hunterDesktopHeader.jpg");
+
+        .hunterScreenshot1 {
+          width: 58%;
+          position: absolute;
+          right: -120px;
+          bottom: 0px;
+          max-width: 710px;
+        }
+        
+      }
+      
+    }
+
+    .hunterLogo {
+      margin-top: -9px;
+    }    
+
+  }
+  
+}
+
+
+
+
+
+@media screen and (min-width: $breakpoint3) {
+  .hunterProjectPage {
+    .hunterLogo {
+      margin-top: -12px;
+    }
+    
+  }
+}

@@ -1,5 +1,16 @@
 {
   "projects": {
+    "hunter": {
+      "name": "Hunter College",
+      "alias": "hunter",
+      "projectType": "website - 2017",
+      "homeSubTitle": "Read the Case Study",
+      "bgImage": "",
+      "logoWhite": "images/cunyLogoWhite.png",
+      "logoColor": "images/hunter/cunyLogoColor.jpg",
+      "logoColorMobile": "images/hunter/mobile/cunyLogoColorMobile.jpg",
+      "descriptionUrl": ""
+    },
     "psal": {
       "name": "Public Schools Athletic League",
       "alias": "psal",

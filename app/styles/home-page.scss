@@ -34,6 +34,10 @@
     /*border: 1px solid;*/
   }
 
+  .hunterRow .previewImageContain, .hunterPreviewImage {
+    background-image: url('#{$image_path}hunter/mobile/hunterMobileHome.jpg');
+  }
+
   .psalRow .previewImageContain, .psalPreviewImage {
     background-image: url('#{$image_path}psal/mobile/psalMobileHome.jpg');
   }
@@ -143,6 +147,9 @@
   }
 
   @media screen and (min-width: $breakpoint2) {
+    .hunterRow .previewImageContain, .hunterPreviewImage {
+      background-image: url('#{$image_path}hunter/desktop/hunterDesktopHome.jpg');
+    }
     .psalRow .previewImageContain, .psalPreviewImage {
       background-image: url('#{$image_path}psal/desktop/psalDesktopHome.jpg');
     }
