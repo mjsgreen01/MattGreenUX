@@ -1,6 +1,8 @@
 
 .hunterProjectPage {
-
+  .hunterLogo {
+    width: 24px;
+  }
 }
 
 
@@ -29,7 +31,7 @@
     }
 
     .hunterLogo {
-      margin-top: -9px;
+      width: 36px;
     }    
 
   }
@@ -43,7 +45,7 @@
 @media screen and (min-width: $breakpoint3) {
   .hunterProjectPage {
     .hunterLogo {
-      margin-top: -12px;
+      width: 45px;
     }
     
   }
