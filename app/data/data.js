@@ -34,7 +34,7 @@
       "descriptionUrl": ""
     },
     "immig": {
-      "name": "Immigration 1880-1924",
+      "name": "Immigration\n1880-1924",
       "alias": "immig",
       "projectType": "tablet app - 2014",
       "homeSubTitle": "See More",
