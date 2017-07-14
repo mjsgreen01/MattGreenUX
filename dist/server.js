@@ -25,7 +25,7 @@ app.use(compression());
 // default to .html (you can omit the extension in the URL)
 app.use(serveStatic(`${__dirname}/public`, {'extensions': ['html']}));
 
-app.use(['/projects', '/hunter', '/psal', '/erb', '/home', '/immig'], function(req, res, next) {
+app.use(['/projects', '/hunter', '/psal', '/erb', '/home', '/immigration'], function(req, res, next) {
     // Just send the index.html for other files to support HTML5Mode
     res.sendFile('index.html', { root: __dirname+'/public' });
 });
